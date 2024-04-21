@@ -1,701 +1,2453 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-	<head>
+
+<!DOCTYPE>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="william hamilton, wleif, will hamilton, will stanford, stanford nlp, snap, stanford snap, jure leskovec, dan jurafsky, computational social science, nlp, hamilton computer science, machine learning, computational linguistics, mcgill, mila">
-    <title>William L. Hamilton</title>
+    <meta name="viewport" content="width=device-width">
+    <title>David Jurgens</title>
+
+    
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    
+    <script src="js/vendor/custom.modernizr.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116065959-1"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-79520207-1', 'auto');
-      ga('send', 'pageview');
-
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-116065959-1');
     </script>
   </head>
   <body>
+    
     <div class="row">
       <div class="large-9 columns">
         <div class="row">
           <div class="large-9 columns">
-            <h1 style="font-weight:200">William L. Hamilton</h1>
+            <h1 style="font-weight:200">David Jurgens</h1>
           </div>
         </div>
         <div class="row">
-
           <div class="large-4 columns">
-            <img src="images/profile_medium.jpg" width="250px" alt="" style="margin-bottom: 20px; width: 250;">
+            <img src="images/david_jurgens.jpeg" width="240px" alt="It's me, David Jurgens!" style="margin-bottom: 20px; width: 240;">
+
           </div>
           <div class="large-8 columns" >
-  <p style="font-size:16px; font-weight:200; line-height: 24px; margin-top: 0px; font-family:Helvetica">
-  <!--            I build socially-aware AI &mdash; intelligent algorithms that can understand social systems and that are built with social responsibility in mind. -->
-            I am an Assistant Professor of Computer Science at McGill University and a Canada CIFAR Chair in AI.
-            I develop  machine learning models that can reason about our complex, interconnected world.
-            <br/>
-            <br/>
-            Broadly, my research interests lie at the intersection of machine learning, network science, and natural language processing, with a current  emphasis on the fast-growing subjects of <i>graph representation learning</i> and <i>graph neural networks</i>.
+              <p style="font-size:16px; Font-weight:300; line-height: 24px; margin-top: 0px ">
+                I research how humans behave by observing the things we say, what
+                we do, and who we are.  My research combines linguistic analysis and
+                network science together to understand behavior in its natural
+                social context.  I collaborate with colleagues from areas such
+                as Psychology, Linguistics, Digital Humanities, and Sociology to
+                improve our theories using data-driven insights and
+                methodologies.
+              </p>
 
+              <table style="border:1px solid;">
+                <tr><td><b>Prospective students</b>: I am recruiting PhD
+                students in Fall 2024 to work on Natural Language Processing
+                through CSE
+                (apply <a href="https://cse.engin.umich.edu/academics/graduate/admissions/apply/">here</a>). Competitive
+                applicants should have significant experience with NLP methods;
+                a strong interest (or coursework) in social psychology or
+                experience with experiments and causal inference are helpful
+                too. </td></tr>
+              </table>
+              
+              <!-- <table style="border:1px solid;">                
+                <tr><td><b>Postdoc position available</b>: I am recruiting a
+                postdoc to start in Fall 2023 or early Winter 2024 for a project on
+                cultural values. Interested applicants
+                should fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIs7fJ6Mevv9Rv5VQiN8-m2ENh4NqenWmtjgBB5yZw89RA1g/viewform?usp=sf_link"this form</a> to apply.</td></tr>
+                
+              </table> -->
 
-						<!--		<p ><h6><b><font color="red">I am looking for MSc and PhD students, who want to start in September, 2019. If you are interested please submit applications to <b>both</b> <a href=https://www.cs.mcgill.ca/academic/graduate/admission/">McGill's School of Computer Science</a> and <a href="https://mila.quebec/en/admission/">Mila</a>.</font></b></h6>-->
-             
-            <p ><h5><b>Recent news</b></h5>
-         <ul style="font-size:14px; font-weight:350">
-					 <li> <b> June 2019 </b> Our paper on using neural transfer learning to detect perinatal asphyxia was accepted at Interspeech 2019!
-					 <li> <b> June 2019 </b> Invited talk on "Graph Neural Networks and Graph Isomorphism" at the ICML 2019 Workshop on Learning and Reasoning with Graph-structured Representations.</li>
-					 <li> <b> May 2019 </b> Our paper on "Compositional Fairness Constraints for Graph Embeddings" was accepted at ICML 2019. </li>
-					 <li> <b> April 2019 </b> I was awarded a Canada CIFAR Chair in AI! </li>
-					 <li> <b>January 2019</b>: AAAI 2019 Tutorial on Graph Representation Learning was a great success! Slides are available <a href="https://cs.mcgill.ca/~wlh/files/AAAI19_GRLTutorial.zip">here</a>. </li>
-          </p>
           </div>
         </div>
-          <div class="row">
-          <div class="row">
-            <div class="large-12 columns">
-              <ul class="tabs" data-tabs id="example-tabs">
-                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" style="font-size:20px; color:grey">Publications</a></li>
-                <li class="tabs-title"><a href="#panel2" style="font-size:20px; color:grey">Teaching</a></li>
-                <li class="tabs-title"><a href="#panel3" style="font-size:20px; color:grey">Bio</a></li>
-              </ul>
-            </div>
-            </div>
-            <div class="tabs-content" data-tabs-content="example-tabs">
-              <div class="tabs-panel is-active" id="panel1">
-                <div class="row">
-                  <div class="large-12 columns">
-                    <h5>2019</h5>
-
-                   <table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/baby_speech.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a class='papertitle' href="">Neural Transfer Learning for Cry-based Diagnosis of Perinatal Asphyxia</a><br/>
-														Charles C. Onu, Jonathan Lebensold, <span style="font-weight:400">William L. Hamilton</span>, and Doina Precup<br/>
-                            <i>Interspeech.</i> 2019. <br/>
-                        </div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
-
-                   <table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/invariance.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a class='papertitle' href="https://arxiv.org/pdf/1905.10674.pdf">Compositional Fairness Constraints for Graph Embeddings</a><br/>
-														Avishek Joey Bose and <span style="font-weight:400">William L. Hamilton</span><br/>
-                            <i>Proceedings of ICML.</i> 2019. <br/>
-														<a href="https://arxiv.org/pdf/1905.10674.pdf">pdf (arxiv)</a>
-                        </div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
-
-                   
-                   <table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/gradient_estimator.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a class='papertitle' href="">Discrete Off-policy Policy Gradients Using Continuous Relaxations</a><br/>
-														Andre Cianflone, Zafarali Ahmed, Riashat Islam, Avishek Joey Bose, and <span style="font-weight:400">William L. Hamilton</span><br/>
-                            <i>Proceedings of RLDM.</i> 2019. <br/>
-                        </div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
-
-										<table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/baby_speech.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a class='papertitle' href="">Neural Transfer Learning for Cry-based Diagnosis of Perinatal Asphyxia</a><br/>
-														Charles C. Onu, Jonathan Lebensold, <span style="font-weight:400">William L. Hamilton</span>, and Doina Precup<br/>
-                            <i>ICLR AI for Social Good Workshop.</i> 2019. <br/>
-                        </div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
+        <div class="row">
+          <!-- <div class="panel"> -->
+          <div class="section-container auto" data-section>
+              <section class="active">
+                <p class="title" data-section-title><a href="#panel1">Publications</a></p>
+                <div class="content" data-section-content>
+                  <div class="row">
+                    <div class="large-12 columns">
 
 
+                      <h5>2024</h5>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Large language models are bad at answering psychological questionnaires consistently"  src="images/model-consistency-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="http://arxiv.org/abs/2311.09718">You don't need a personality test to know these models are unreliable: Assessing the Reliability of Large Language Models on Psychometric Instruments</a><br/>
+                            Bangzhao Shu*, Lechen Zhang*, Minje Choi, Lavinia Dunagan, Dallas Card, and David Jurgens.<br/>
+                            Proceedings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics. </br>
+                            <a href="http://arxiv.org/abs/2311.09718">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/orange0629/llm-personas">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Memes are multimodal constructions where the base image template and additional text fills both have semantic value."  src="https://naitian.org/social-memeing/drake.jpeg"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/abs/2311.09130">Social Meme-ing: Measuring Linguistic Variation in Memes</a><br/>
+                            Naitian Zhou, David Jurgens, and David Bamman.<br/>
+                            Proceedings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics.</br>
+                            <a href="https://arxiv.org/abs/2311.09130">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://naitian.org/social-memeing/">code and data</a>
+                          </td>
+                        </tr>
+                      </table>                      
 
 
-                   <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/ieee.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://cs.mcgill.ca/~wlh/files/AAAI19_GRLTutorial.zip" class='papertitle'>Tutorial on Graph Representation Learning</a><br/>
-                            <span style="font-weight:400">William L. Hamilton</span> and Jian Tang <br/>
-                            <i>AAAI Tutorial Forum.</i> 2019. <br/>
-                          <a href="https://cs.mcgill.ca/~wlh/files/AAAI19_GRLTutorial.zip">slides (zip)</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The empathetic alignment between an author and responder on Reddit shows most people just give advice."  src="images/naacl2024-empathy.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="">Modeling Empathetic Alignment in Conversation</a><br/>
+                            Jiamin Yang and David Jurgens.<br/>
+                            Proceedings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics.</br>
+                            <a href="">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="">code and data</a> <i>(forthcoming)</i>
+                          </td>
+                        </tr>
+                      </table>
 
 
-                   <table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/dgi.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a class='papertitle' href="https://arxiv.org/abs/1809.10341">Deep Graph Infomax</a><br/>
-                            Petar Velickovic, William Fedus, <span style="font-weight:400">William L. Hamilton</span>, Pietro Lio, Yoshua Bengio, and R Devon Hjelm. &nbsp;<br/>
-                            <i>Proceedings of ICLR.</i> 2019. <br/>
-                          	<a href="https://arxiv.org/abs/1809.10341">pdf (arxiv)</a>
-                        </div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Strong influence connections in the global news network."  src="images/webconf-2024.jpg"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="">Global News Synchrony During the Start of the COVID-19 Pandemic</a><br/>
+                            Xi Chen, Scott A. Hale, David Jurgens, Mattia Samory, Ethan Zuckerman, Przemyslaw Adam Grabowicz.<br/>
+                            Proceedings of the 2024 Web Conference.</br>
+                            <a href="">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="">code and data</a> <i>(forthcoming)</i>
+                          </td>
+                        </tr>
+                      </table>
+                      
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The network model for estimating contextual informativeness."  src="images/lrec-2024.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="">Finding Educationally Supportive Contexts for Vocabulary Learning with Attention-Based Models</a><br/>
+                            Sungjin Nam, Kevyn Collins-Thompson, David Jurgens and Xin Tong.<br/>
+                            Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING).</br>
+                            <a href="">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="">code and data</a> <i>(forthcoming)</i>
+                          </td>
+                        </tr>
+                      </table>
+
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/peng-et-al-2020.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/abs/2009.01896">Author Mentions in Science News Reveal Wide-Spread Ethnic Bias.</a><br/>
+			    Hao Peng, Misha Teplitskiy, David Jurgens.<br/>                            
+                            <i>Journal of Quantitative Social Sciences.</i> </br>                            
+                            <a href="https://arxiv.org/abs/2009.01896">pdf</a> (preprint)
+                          </td>
+                        </tr>
+                      </table>
+                      
+
+                      
+                      <h5>2023</h5>
+
+                     
 
 
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="LLMs answer questions more or less accurately depending on the social roles in the question prompt"  src="images/social-roles-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/abs/2311.10054">Is "A Helpful Assistant" the Best Role for Large Language Models? A Systematic Evaluation of Social Roles in System Prompts</a><br/>
+                            Mingqian Zheng, Jiaxin Pei, and David Jurgens.<br/>
+                            <i>preprint</i>.</br>
+                            <a href="https://arxiv.org/abs/2311.10054">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/Jiaxin-Pei/Prompting-with-Social-Roles">code and data</a>
+                          </td>
+                        </tr>
+                      </table> 
 
-                     <table class="table papers" style="margin-top: 15px;">
-											 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          	<img class='paperimage' alt=""  src="images/papers/wlgoneural.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://arxiv.org/pdf/1810.02244.pdf" class='papertitle'>Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks</a><br/>
-                            Christoper Morris, Martin Ritzert, Matthias Fey, <span style="font-weight:400">William L. Hamilton</span>, Jan Eric Lenssen, Gaurav Rattan, and Martin Grohe. &nbsp;<br/>
-                            <i>Proceedings of AAAI.</i> 2019. <br/>
-                          <a href="https://arxiv.org/pdf/1810.02244.pdf">pdf (arxiv)</a>
-                        </div>
-                        </td>
-												 </tr></tbody>
-                    </table>                                          
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The answers of LLMs align with the perceptions of specific social groups."  src="images/model-alignments-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="http://arxiv.org/abs/2311.09730">Aligning with Whom? Large Language Models Have Gender and Racial Biases in Subjective NLP Tasks</a><br/>
+                            Huaman Sun, Jiaxin Pei, Minje Choi, and David Jurgens.<br/>
+                            <i>preprint</i>.</br>
+                            <a href="http://arxiv.org/abs/2311.09730">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/Jiaxin-Pei/LLM-Group-Bias">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="zero-shot LLM performance on social language tasks"  src="images/socket.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/abs/2305.14938">Do LLMs Understand Social Knowledge? Evaluating the Sociability of Large Language Models with SocKET Benchmark </a><br/>
+                            Minje Choi,* Jiaxin Pei,* Sagar Kumar, Chang Shu and David Jurgens.<br/>
+                            Proceedings of the Empirical Methods in Natural Language Processing (EMNLP). 2023.</br>
+                            <a href="https://arxiv.org/abs/2305.14938">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/minjechoi/SOCKET">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Media storms over time with labels"  src="images/emnlp-2023-news.jpg"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="">When it Rains, it Pours: Modeling Media Storms and the News Ecosystem</a><br/>
+                            Ben Litterer, David Jurgens, and Dallas Card.<br/>
+                            Proceedings of the Empirical Methods in Natural Language Processing (EMNLP). 2023.</br>
+                            <a href="">paper</a> <i>(forthcoming)</i>
+                          </td>
+                        </tr>
+                      </table>                      
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Effect sizes of identity disclosure on tweet and retweet-level activities."  src="images/disclosure-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/abs/2308.09270">Profile Update: The Effects of Identity Disclosure on Network
+Connections and Language</a><br/>
+                            Minje Choi, Daniel Romero, David Jurgens.<br/>
+                            <i>preprint</i>.</br>
+                            <a href="https://arxiv.org/abs/2308.09270">paper</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The causal DAG for the paper."  src="images/causal-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/abs/2307.15176">RCT Rejection Sampling for Causal Estimation Evaluation</a><br/>
+                            Katherine A. Keith, Sergey Feldman, David Jurgens, Jonathan Bragg, Rohit Bhattacharya.<br/>
+                            <i>preprint</i>. 2023.</br>
+                            <a href="https://arxiv.org/abs/2307.15176">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/kakeith/rct_rejection_sampling">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The probability that, given an appropriate message for the relationships represented by a row, the message will also be appropriate in another relationship listed in the column. Probabilities are calculated across the entire data"  src="images/acl-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/abs/2307.02763">Your spouse needs professional help: Determining the Contextual  Appropriateness of Messages through Modeling Social Relationships</a><br/>
+                             David Jurgens,* Agrima Seth,* Jackson Sargent,<sup>&dagger;</sup> Athena Aghighi,<sup>&dagger;</sup> and Michael Geraci.<sup>&dagger;</sup>.<br/>
+                            Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL). 2023.</br>
+                            <a href="https://arxiv.org/abs/2307.02763">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/davidjurgens/contextual-appropriateness">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Relative use of politeness strategies when annotators rewrite emails to be more polite"  src="images/law-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/pdf/2306.06826.pdf">When Do Annotator Demographics Matter? Measuring The Influence of Annotator Demographics with the POPQUORN Dataset </a><br/>
+                            Jiaxin Pei and David Jurgens.<br/>
+                            Proceedings of the 17th Linguistic Annotation Workshop (LAW-XVII) at ACL. 2023.</br>
+                            <a href="https://arxiv.org/pdf/2306.06826.pdf">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/Jiaxin-Pei/potato-prolific-dataset.">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The causal-estimated effect of banning on users matching the style of others"  src="images/style-influence-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/abs/2307.02758">Exploring Linguistic Style Matching in Online Communities: The Role of Social Context and Conversation Dynamics</a><br/>
+                            Aparna Ananthasubramaniam, Hong Chen, Jason Yan, Kenan Alkiek, Jiaxin Pei, Agrima Seth, Lavinia Dunagan, Minje Choi, Benjamin Litterer and David Jurgens.<br/>
+                            (<span style="font-weight: bold;">Best Paper</span>)<br/>                                                        
+                            Proceedings of the 1st Workshop on Social Influence in Conversations (SICon) at ACL. 2023.</br>
+                            <a href="https://arxiv.org/abs/2307.02758">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/davidjurgens/style-influence">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Overall performance on each language. The box indicates the lower quartile to the upper quartile and the whisker indicates the maximum and the minimum. Outliers are shown as dots. Participants generally achieve better performances on languages in the training set and achieved good performance on Arabic and Dutch. Predicting intimacy in Hindi and Korean remains challenging. Moreover, performances on unseen languages generally have larger variances."  src="images/semeval-2023.png"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/pdf/2210.01108">SemEval 2023 Task 9: Multilingual Tweet Intimacy Analysis</a><br/>
+                            Jiaxin Pei, Vítor Silva, Maarten Bos, Yozon Liu, Leonardo Neves, David Jurgens, and Francesco Barbieri.<br/>
+                            Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval).</br>
+                            <a href="https://arxiv.org/pdf/2210.01108">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://sites.google.com/umich.edu/semeval-2023-tweet-intimacy/home">data and competition</a>
+                          </td>
+                        </tr>
+                      </table>                      
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The effects of personal shocks on people's social media activities"  src="images/icwsm-2023-shocks.jpg"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/pdf/2302.07951.pdf">Analyzing the Engagement of Social Relationships During Life Event Shocks in Social Media</a><br/>
+                            Minje Choi, David Jurgens, and Daniel Romero.<br/>
+                            Proceedings of the International Conference on Web and Social Media (ICWSM). 2023.</br>
+                            <a href="https://arxiv.org/pdf/2302.07951.pdf">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/minjechoi/relationships-shocks">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The influence of multilingual individuals on social connectedness in Europe"  src="images/icwsm-2023-multilingual.jpg"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://arxiv.org/abs/2304.03797">Bridging Nations: Quantifying the Role of Multilinguals in Communication on Social Media</a><br/>
+                            Julia Mendelsohn, Sayan Ghosh, David Jurgens, and Ceren Budak.<br/> 
+                            (<span style="font-weight: bold;">Best Methodology Paper</span>)<br/>
+                            Proceedings of the International Conference on Web and Social Media (ICWSM). 2023.</br>
+                            <a href="https://arxiv.org/abs/2304.03797">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/juliamendelsohn/bridging-nations">code and data</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      
+                      <h5>2022</h5>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The way the press portrays certain scientific results differs by where those results were described in the paper"  src="images/emnlp-2022-matching.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/pdf/2210.13001.pdf">Modeling Information Change in Science Communication with Semantically Matched Paraphrases</a><br/>
+                            Dustin Wright, Jiaxin Pei, David Jurgens, and Isabelle Augenstein.<br/>
+                            Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP). 2022.</br>
+                            <a href="https://arxiv.org/pdf/2210.13001.pdf">paper</a> 
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://www.copenlu.com/publication/2022_emnlp_wright/">code and data</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Not all empathy papers use empathy in the same way"  src="images/emnlp-2022-empathy.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/pdf/2210.16604">A Critical Reflection and Forward Perspective on Empathy and Natural Language Processing</a><br/>
+                            Allison Claire Lahnala, Charles Welch, David Jurgens, and Lucie Flek.<br/>
+                            Proceedings of the Findings of Empirical Methods in Natural Language Processing (EMNLP Findings). 2022.</br>
+                            <a href="https://arxiv.org/pdf/2210.16604">paper</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Potatoes are delicious"  src="images/potato-logo.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://aclanthology.org/2022.emnlp-demos.33/">POTATO: The Portable Text Annotation Tool</a><br/>
+                            Jiaxin Pei, Aparna Kamakshi Ananthasubramaniam, Xingyao Wang, Naitian Zhou, Apostolos Dedeloudis, Jackson Sargent and David Jurgens.<br/>
+                            Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP): Systems Demonstrations. 2022.</br>
+                            <a href="https://aclanthology.org/2022.emnlp-demos.33/">paper</a> 
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/davidjurgens/potato">code</a>                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Citation context sizes"  src="images/citation-2021.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://aclanthology.org/2022.naacl-main.137/">MultiCite: Modeling realistic citations requires moving beyond the single-sentence single-label setting</a><br/>
+                            Anne Lauscher, Brandon Ko, Bailey Kuhl, Sophie Johnson, Arman Cohan, David Jurgens, Kyle Lo.<br/>
+                            Proceedings of the 2022 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL). 2022.</br>                            
+                            <a href="https://aclanthology.org/2022.naacl-main.137/">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/allenai/multicite">code and data</a>                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Citation context sizes"  src="images/woah-2022.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://aclanthology.org/2022.woah-1.8/">The subtle language of exclusion: Identifying the Toxic Speech of Trans-exclusionary Radical Feminists</a><br/>
+                            Christina Lu and David Jurgens.<br/>
+                            Proceedings of the Sixth Workshop on Online Abuse and Harms (WOAH). 2022.</br>                            
+                            <a href="https://aclanthology.org/2022.woah-1.8/">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/lu-christina/terfspot">code and data</a>                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Correlations between the ways in which two news articles can be similar."  src="images/semeval-2022.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://aclanthology.org/2022.semeval-1.155/">SemEval-2022 Task 8: Multilingual news article similarity</a><br/>
+                            Xi Chen, Ali Zeynali, Chico Camargo, Fabian Flöck, Devin Gaffney, Przemyslaw Grabowicz, Scott Hale, David Jurgens, and Mattia Samory.<br/>
+                            Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022). 2022.</br>                            
+                            <a href="https://aclanthology.org/2022.semeval-1.155/">paper</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://competitions.codalab.org/competitions/33835">data</a>                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The effect of curriculum ordering on word similarity tasks"  src="images/contextual-informativeness.jpg"/>
+                          </td>
+                          <td class="paper-info">                          
+                            <a href="https://arxiv.org/abs/2204.09885">An Attention-Based Model for Predicting Contextual Informativeness and Curriculum Learning Applications</a><br/>
+                            Sungjin Nam, David Jurgens, and Kevyn Collins-Thompson.<br/>
+                            <i>in submission</i>. 2022. </br>
+                            <a href="https://arxiv.org/abs/2204.09885">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The effects of mentorship"  src="images/socius-2022.gif"/>
+                          </td>
+                          <td class="paper-info">                          
+                            <a href="https://journals.sagepub.com/doi/10.1177/23780231221085118">Diversifying the Professoriate</a><br/>
+                            Bas Hofstra, Daniel A. McFarland, Sanne Smith, David Jurgens.<br/>
+                            <i>Socius</i>. 2022. </br>
+                            <a href="https://journals.sagepub.com/doi/10.1177/23780231221085118">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Similarities in Redditor political affiliations and commenting activity"  src="images/acl-2022.jpg"/>
+                          </td>
+                          <td class="paper-info">
+                            <a href="https://aclanthology.org/2022.findings-acl.43/">Classification without (Proper) Representation: Political Heterogeneity in Social Media and Its Implications for Classification and Behavioral Analysis</a><br/>
+                            Kenan Alkik, Bohan Zhang, and David Jurgens.<br/>
+                            ACL Findings. 2022. </br>
+                            <a href="https://aclanthology.org/2022.findings-acl.43/">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/davidjurgens/reddit-political-affiliation">code</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Multilingual performance on grapheme to phoneme conversion"  src="images/g2p.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/abs/2204.03067">ByT5 model for massively multilingual grapheme-to-phoneme conversion</a><br/>
+                            Jian Zhu, Cong Zhang, and David Jurgens.<br/>
+                            Interspeech 2022. </br>
+                            <a href="https://arxiv.org/abs/2204.03067">pdf</a> &middot; <a href="https://github.com/lingjzhu/CharsiuG2P">code</a>
+                          </td>
+                        </tr>
+                      </table>   
+                      
+                     
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Pathways of linguistic diffusion seen on Twitter"  src="images/language-adoption.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/abs/2202.04842">Networks and Identity Drive Geographic Properties of the Diffusion of Linguistic Innovation</a><br/>
+                            Aparna Ananthasubramaniam, David Jurgens, Daniel M. Romero.<br/>
+                            <i>in submission</i>. 2022. </br>
+                            <a href="https://arxiv.org/abs/2202.04842">pdf</a>
+                          </td>
+                        </tr>
+                      </table>                     
+                      
+                     
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Food healthiness ratings"  src="images/appetite-2022.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S019566632200040X">Language in Popular American Culture Constructs the Meaning of Healthy and Unhealthy Eating: Narratives of Craveability, Excitement, and Social Connection in Movies, Television, Social Media, Recipes, and Food Reviews</a><br/>
+                            Bradley P. Turnwald, Margaret A. Perry, David Jurgens, Vinodkumar Prabhakaran, Dan Jurafsky, Hazel R. Markus, Alia J. Crum.<br/>
+                            <i>Appetitte</i>. 2022. </br>                            
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S019566632200040X">pdf</a>
+                          </td>
+                        </tr>
+                      </table>                      
+                      
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Phone-to-audio alignment without text: A Semi-supervised Approach"  src="images/phone-to-audio.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/abs/2110.03876">Phone-to-audio alignment without text: A Semi-supervised Approach</a><br/>
+                            Jian Zhu, Cong Zhang, and David Jurgens.<br/>
+                            Proceedings of the 2022 IEEE International Conference on Acoustics, Speech and Signal Processing. </br>
+                            <a href="https://arxiv.org/abs/2110.03876">pdf</a> &middot; <a href="https://github.com/lingjzhu/charsiu">code</a>
+                          </td>
+                        </tr>
+                      </table>   
 
 
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/gerontologist-2022.png"/>
+                          </td>
+                          <td class="paper-info">
 
-                    <h5>2018</h5>
+                            <a href="https://academic.oup.com/gerontologist/article-abstract/62/10/1454/6653119">Work Expectations, Depressive Symptoms, and Passive Suicidal Ideation Among Older Adults: Evidence From the Health and Retirement Study </a><br/>
+                            Briana Mezuk, Linh Dang, David Jurgens, Jacqui Smith.<br/>
+                            <i>The Gerontologist</i> 62 (10), 1454-1465 2022.</br>
+                            <a href="https://academic.oup.com/gerontologist/article-abstract/62/10/1454/6653119">paper</a> 
+                          </td>
+                        </tr>
+                      </table>                      
+                      
+                      
+                      <h5>2021</h5>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Latent classes of biased words and their effects on toxicity"  src="images/bias-2021.png"/>
+                          </td>
+                          <td class="paper-info">
 
-                     <table class="table papers" style="margin-top: 15px;">
-											 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/diffpool.png"/>
-                        </div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://arxiv.org/abs/1806.08804" class='papertitle'>Hierarchical Graph Representation Learning with Differentiable Pooling</a><br/>
-                            Jiaxuan You, Rex Ying, Christopher Morris, Xiang Ren, <span style="font-weight:400">William L. Hamilton</span>, Jure Leskovec. &nbsp;<br/>
-                            <i>Proceedings of NeurIPS.</i> 2018. <br/>
-                          <a href="https://arxiv.org/pdf/1806.08804.pdf">pdf (arxiv)</a>
-                        </td>
-													</div>
-												 </tr></tbody>
-                    </table>                                          
+                            <a href="https://arxiv.org/abs/2104.06999">Detecting Cross-Geographic Biases in Toxicity Modeling on Social Media</a><br/>
+                            Sayan Ghosh, Dylan Baker, David Jurgens, and Vinodkumar Prabhakaran.<br/>
+                            (<span style="font-weight: bold;">Best Paper</span>)<br/>
+                            Proceedings of the 7th Workshop on Noisy User-generated Text (W-NUT). </br>                            
+                            <a href="https://arxiv.org/abs/2104.06999">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+                                        
 
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/emnlp-2021-sky.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/abs/2109.11061">Using Sociolinguistic Variables to Reveal Changing Attitudes Towards Sexuality and Gender</a>.<br/>
+                              Sky Wang and David Jurgens.<br/>
+                            <i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>. </br>
+                            <a href="https://arxiv.org/abs/2109.11061">pdf</a>
+                          </td>
+                        </tr>
+                      </table>                      
+
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/emnlp-2021-jian.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="http://export.arxiv.org/abs/2109.03158">Idiosyncratic but not Arbitrary: Learning Idiolects in Online Registers Reveals Distinctive yet Consistent Individual Styles</a>.<br/>
+                            Jian Zhu and David Jurgens..<br/>
+                            <i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>. </br>
+                            <a href="http://export.arxiv.org/abs/2109.03158">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/lingjzhu/idiolect">code and data</a>
+                          </td>
+                        </tr>
+                      </table>                      
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/emnlp-2021-jiaxin.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://aclanthology.org/2021.emnlp-main.784/">Measuring Sentence-Level and Aspect-Level Certainty in Science Communications</a><br/>
+                            Jiaxin Pei and David Jurgens.<br/>
+                            <i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>. </br>
+                            <a href="https://aclanthology.org/2021.emnlp-main.784/">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://jiaxin-pei.github.io/project_websites/certainty/Ceratinty-in-Science-Communication.html">code and data</a>
+                          </td>
+                        </tr>
+                      </table>                      
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/emnlp-2021-park.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://aclanthology.org/2021.findings-emnlp.288/">Detecting Community Sensitive Norm Violations in Online Conversations</a>.<br/>
+                            Chan Young Park, Julia Mendelsohn, Karthik Radhakrishnan, Kinjal Jain, Tushar Kanakagiri, David Jurgens and Yulia Tsvetkov.<br/>
+                            <i>Proceedings of the Findings of the 2021 Conference on Empirical Methods in Natural Language Processing (Findings of EMNLP)</i>. </br>                            
+                            <a href="https://aclanthology.org/2021.findings-emnlp.288/">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/emnlp-2021-xingyao.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/abs/2109.12212">An Animated Picture Says at Least a Thousand Words: Selecting Gif-based Replies in Multimodal Dialog.</a>.<br/>
+                            Xingyao Wang and David Jurgens.<br/>
+                            <i>Proceedings of the Findings of the 2021 Conference on Empirical Methods in Natural Language Processing (Findings of EMNLP)</i>. </br>                            
+                            <a href="https://arxiv.org/abs/2109.12212">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/xingyaoww/gif-reply">code and data</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/xingyaoww/gif-reply-slack-bot">Slack gif-bot App</a>                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Driving cessation pipeline"  src="images/frontiers-2021.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://www.frontiersin.org/articles/10.3389/fpubh.2021.689967/full">A Data Science Approach to Estimating the Frequency of Driving Cessation Associated Suicide in the US: Evidence From the National Violent Death Reporting System</a><br/>
+                            Tomohiro M. Ko,, Viktoryia A. Kalesnikava, David Jurgens, and Briana Mezuk.<br/>
+                            <i>Frontiers in Public Health</i>. </br>                            
+                            <a href="https://www.frontiersin.org/articles/10.3389/fpubh.2021.689967/full">pdf</a>       
+                          </td>
+                        </tr>
+                      </table>                      
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Teaching is serious business"  src="images/teaching-nlp-1.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://www.aclweb.org/anthology/2021.teachingnlp-1.10.pdf">Learning PyTorch Through A Neural Dependency Parsing Exercise</a><br/>
+                            David Jurgens.<br/>
+                            Proceedings of the Fifth Workshop on Teaching NLP, 2021. </br>                            
+                            <a href="https://www.aclweb.org/anthology/2021.teachingnlp-1.10.pdf">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Teaching is serious business"  src="images/teaching-nlp-2.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://www.aclweb.org/anthology/2021.teachingnlp-1.19.pdf">Learning about Word Vector Representations and Deep Learning through Implementing Word2vec</a><br/>
+                            David Jurgens.<br/>
+                            Proceedings of the Fifth Workshop on Teaching NLP, 2021. </br>                            
+                            <a href="https://www.aclweb.org/anthology/2021.teachingnlp-1.19.pdf">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="Temporal dynamics of relationships on Twitter"  src="images/icwsm-2021.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="">More than meets the tie: Examining the Role of Interpersonal Relationships in Social Networks</a><br/>
+                            Minje Choi, Ceren Budak, Daniel Romero, and David Jurgens.<br/>
+                            International Conference on Web and Social Media (ICWSM), 2021. </br>                            
+                            <a href="https://arxiv.org/abs/2105.06038">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/minjechoi/relationships">code</a>                            
+                          </td>
+                        </tr>
+                      </table>
+
+                    
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The structure of two online subreddits, which is predictive of their rate of lexical change"  src="images/naacl-2021-slx.jpg"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/abs/2104.05010">The Structure of Online Social Networks Modulates the Rate of Lexical Change</a><br/>
+                            Jian Zhu and David Jurgens.<br/>
+                            Proceedings of the North American Meeting of the Association for Computational Linguistics (NAACL), 2021. </br>                            
+                            <a href="https://arxiv.org/abs/2104.05010">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/lingjzhu/reddit_network">code</a>                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The effects of framing on audience response to immigration tweets"  src="images/naacl-2021-framing.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                            <a href="https://arxiv.org/abs/2104.06443">Modeling Framing in Immigration Discourse on Social Media</a><br/>
+                            Julia Mendelsohn, Ceren Budak, and David Jurgens.<br/>
+                            Proceedings of the North American Meeting of the Association for Computational Linguistics (NAACL), 2021. </br>                            
+                            <a href="https://arxiv.org/abs/2104.06443">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/juliamendelsohn/framing">code</a>                            
+                          </td>
+                        </tr>
+                      </table>
 
                     <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/graphquery.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://arxiv.org/pdf/1806.01445.pdf" class='papertitle'>Embedding Logical Queries on Knowledge Graphs </a><br/>
-                            <span style="font-weight:400">William L. Hamilton</span>, Marinka Zitnik, Payal Bajaj, Dan Jurafsky, Jure Leskovec. &nbsp;<br/>
-                            <i>Proceedings of NeurIPS.</i> 2018. <br/>
-                            <a href="https://arxiv.org/pdf/1806.01445.pdf">pdf (arxiv)</a> 
-                        	</div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The main architecture for forecasting prosocial behavior"  src="images/www-2021.png"/>
+                          </td>
+                          <td class="paper-info">
 
-                   <table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-													<div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/comp_fairness.png"/>
-													</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-													<div class="large-12 columns">
-                            <a class='papertitle'>Compositional Fairness Constraints for Graph Embeddings</a><br/>
-                            Joey Bose and <span style="font-weight:400">William L. Hamilton</span>. <br/>
-                            <i>NeurIPS Relational Representation Learning Workshop.</i> 2018. <br/>
-													</div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
-
-                   <table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-													<div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/cluttr.png"/>
-													</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-													<div class="large-12 columns">
-                            <a class='papertitle'>Compositional Language Understanding with Text-based Relational Reasoning</a><br/>
-                            Koustuv Sinha, Shagun Sodhani, <span style="font-weight:400">William L. Hamilton</span>, and Joelle Pineau. &nbsp;<br/>
-                            <i>NeurIPS Relational Representation Learning Workshop.</i> 2018. <br/>
-													</div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
-
-                   <table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/dgi.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a class='papertitle'>Deep Graph Infomax</a><br/>
-                            Petar Velickovic, William Fedus, <span style="font-weight:400">William L. Hamilton</span>, Pietro Lio, Yoshua Bengio, and R Devon Hjelm. &nbsp;<br/>
-                            <i>NeurIPS Relational Representation Learning Workshop.</i> 2018. <br/>
-                        </div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
+                            <a href="https://arxiv.org/abs/2102.08368">Conversations Gone Alright: Quantifying and Predicting Prosocial Outcomes in Online Conversations
+                            </a><br/>
+                            Jiajun Bao*, Junjie Wu*, Yiming Zhang*, Eshwar Chandrasekharan, and David Jurgens.<br/>
+                            Proceedings of the Web Conference (WebConf), 2021. </br>                            
+                            <a href="https://arxiv.org/abs/2102.08368">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/davidjurgens/prosocial-conversation-forecasting">code</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                     
+                      <h5>2020</h5>
 
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/graphrnn.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://arxiv.org/abs/1802.8773" class='papertitle'>GraphRNN: A Deep Generative Model for Graphs</a><br/>
-                            Jiaxuan You, Rex Ying, Xiang Ren, <span style="font-weight:400">William L. Hamilton</span>, Jure Leskovec. &nbsp;<br/>
-                            <i>Proceedings of ICML.</i> 2018. <br/>
-                          <a href="https://arxiv.org/abs/1802.8773">pdf (arxiv)</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/emnlp-pei-2020.png"/>
+                          </td>
+                          <td class="paper-info">
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/pinsage.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://arxiv.org/abs/1806.01973" class='papertitle'>Graph Convolutional Neural Networks for Web-scale Recommender Systems</a><br/>
-                            Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, <br/>
-                            <span style="font-weight:400">William L. Hamilton</span>, Jure Leskovec. &nbsp;<br/>
-                            <i>Proceedings of KDD.</i> 2018. <br/>
-                          <a href="https://arxiv.org/pdf/1806.01973.pdf">pdf (arxiv)</a> 
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                            <a href="https://arxiv.org/abs/2011.03020">Quantifying Intimacy In Language</a><br/>
+                            Jiaxin Pei and David Jurgens.<br/>                            
+                            Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), 2020. </br>                            
+                            <a href="https://arxiv.org/abs/2011.03020">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://blablablab.si.umich.edu/projects/intimacy/">project webpage</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/Jiaxin-Pei/Quantifying-Intimacy-in-Language">code</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://pypi.org/project/question-intimacy/">pip-installable package</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/conflict.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="files/conflict-paper-www.pdf" class='papertitle'>Community Interaction and Conflict on the Web</a><br/>
-                            Srijan Kumar, <span style="font-weight:400">William L. Hamilton</span>, Jure Leskovec, Dan Jurafsky. &nbsp  &emsp;&emsp;&emsp;<br/>
-                            <i>Proceedings of The Web Conference (WWW).</i> 2018. <br/>
-                          <a href="https://arxiv.org/abs/1803.03697">pdf (arxiv)</a> &nbsp;
-                          <a href="https://snap.stanford.edu/conflict/">project website (code + data)</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/emnlp-zhou-2020.png"/>
+                          </td>
+                          <td class="paper-info">
 
+                            <a href="https://aclanthology.org/2020.emnlp-main.45/">Condolence and Empathy in Online Communities</a><br/>
+                            Naitian Zhou and David Jurgens.<br/>                            
+                            Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), 2020. </br>
+                            <a href="https://aclanthology.org/2020.emnlp-main.45/">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://forms.gle/5wsSDujFVJKRphoY8">data request form</a>
+                            
+                          </td>
+                        </tr>
+                      </table>	      
+		      
+		      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/websci-2020.png"/>
+                          </td>
+                          <td class="paper-info">
 
-                    <h5>2017</h5>
+                            <a href="https://dl.acm.org/doi/fullHtml/10.1145/3394231.3397889">Still out there: Modeling and Identifying Russian Troll Accounts on Twitter.</a><br/>
+			    (<span style="font-weight: bold;">Best Paper Runner-Up</span>)<br/>
+                            Jane Im, Eshwar Chandrasekharan, Jackson Sargent,
+                            Paige Lighthammer, Taylor Denby, Ankit Bhargava,
+                            Libby Hemphill, David Jurgens, Eric Gilbert.<br/>                            
+                            Proceedings of Web Science, 2020. </br>                            
+                            <a href="https://dl.acm.org/doi/fullHtml/10.1145/3394231.3397889">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/ieee.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://arxiv.org/pdf/1709.05584.pdf" class='papertitle'>Representation Learning on Graphs: Methods and Applications</a><br/>
-                            <span style="font-weight:400">William L. Hamilton</span>, Rex Ying, Jure Leskovec. <br/>
-                            <i>IEEE Data Engineering Bulletin.</i> 2017. <br/>
-                          <a href="https://arxiv.org/pdf/1709.05584.pdf">pdf</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/pnas-2020.png"/>
+                          </td>
+                          <td class="paper-info">
+
+                      
+                            <a href="https://www.pnas.org/content/early/2020/03/24/1915006117">
+                              Measuring the predictability of life outcomes with
+                              a scientific mass collaboration.</a><br/> Matthew
+                              J. Salganik, Ian Lundberg, Alexander T. Kindel,
+                              Caitlin E. Ahearn, Khaled Al-Ghoneim, Abdullah
+                              Almaatouq, Drew M. Altschul, Jennie E. Brand,
+                              Nicole Bohme Carnegie, Ryan James Compton,
+                              Debanjan Datta, Thomas Davidson, Anna Filippova,
+                              Connor Gilroy, Brian J. Goode, Eaman Jahani, Ridhi
+                              Kashyap, Antje Kirchner, Stephen McKay, Allison
+                              C. Morgan, Alex “Sandy” Pentland, Kivan Polimis,
+                              Louis Raes, Daniel E.  Rigobon, Claudia
+                              V. Roberts, Diana M. Stanescu, Yoshihiko Suhara,
+                              Adaner Usmani, Erik H. Wang, Muna Adem, Abdulla
+                              Alhajri, Bedoor AlShebli, Redwane Amin, Ryan
+                              B. Amos, Lisa P. Argyle, Livia Baer-Bositis,
+                              Moritz Büchi, Bo-Ryehn Chung, William Eggert,
+                              Gregory Faletto, Zhilin Fan, Jeremy Freese,
+                              Tejomay Gadgil, Josh Gagné, Yue Gaobj, Andrew
+                              Halpern-Manners, Sonia P. Hashim, Sonia A. Hausen,
+                              Guanhua He, Kimberly Higuera, Bernie Hogan, Ilana
+                              M. Horwitz, Lisa M. Hummel, Naman Jain, Kun Jin,
+                              David Jurgens, Patrick C. Kaminski, Areg
+                              Karapetyan, E. H. Kim, Ben Leizman, Naijia Liu,
+                              Malte Möser, Andrew E. Mack, Mayank Mahajan, Noah
+                              Mandell, Helge-Johannes Marahrens, Diana
+                              Mercado-Garcia, Viola Mocz, Katariina
+                              Mueller-Gastell, Ahmed Musse, Qiankun Niu, William
+                              P. Nowak, Hamidreza Omidvar, Andrew Or, Karen
+                              Ouyang, Katy M. Pinto, Ethan Porter, Kristin
+                              E. Porter, Crystal Qian, Tamkinat Rauf, Anahit
+                              Sargsyan, Thomas Schaffner, Landon Schnabel, Bryan
+                              Schonfeld, Ben Sender, Jonathan D. Tang, Emma
+                              Tsurkov, Austin van Loon, Onur Varol, Xiafei Wang,
+                              Zhi Wang, Julia Wang, Flora Wang, Samantha
+                              Weissman, Kirstie Whitaker, Maria K Wolters, Wei
+                              Lee Woon, James Wu, Catherine Wu, Kengran Yang,
+                              Jingwen Yin, Bingyu Zhao, Chenyun Zhu, Jeanne
+                              Brooks-Gunn, Barbara E.  Engelhardt, Moritz Hardt,
+                              Dean Knox, Karen Levy, Arvind Narayanan, Brandon
+                              M. Stewart, Duncan J. Watts, and Sara
+                              McLanahan.<br/><br/>
+
+                            Proceedings of the National Academy of Sciences. Mar 2020, 201915006; DOI: 10.1073/pnas.1915006117 
+                            <a href="https://www.pnas.org/content/early/2020/03/24/1915006117">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      
+
+                      <h5>2019</h5>
 
 
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/graphsage.png"/>
-                        </div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://arxiv.org/pdf/1706.02216.pdf" class='papertitle'>Inductive Representation Learning on Large Graphs</a><br/>
-                            <span style="font-weight:400">William L. Hamilton</span>*, Rex Ying*, Jure Leskovec. <br/>
-                            <i>Proceedings of NeurIPS.</i> 2017. <br/>
-                          <a href="https://arxiv.org/pdf/1706.02216.pdf">pdf</a>
-                          &nbsp;
-                          &nbsp;
-                          <a href="http://snap.stanford.edu/graphsage">project website (code+data)</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/emnlp-2019.png"/>
+                          </td>
+                          <td class="paper-info">
+                            
+                            <a href="https://www.aclweb.org/anthology/D19-1176.pdf">Finding Microaggressions in the Wild: A
+                            Case for Locating Elusive Phenomena in Social Media
+                            Posts</a><br/>
 
- 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/typology_pic.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="files/community_taxonomy.pdf" class='papertitle'>Community Identity and User Engagement in a <br/>Multi-Community Landscape</a><br/>
-                            Justine Zhang*, <span style="font-weight:400">William L. Hamilton</span>*,  Cristian Danescu-Niculescu-Mizil, <br/>Jure Leskovec, Dan Jurafsky. <br/>
-                          <i>Proceedings of ICWSM.</i> 2017. <br/>
-                          <a href="files/community_taxonomy.pdf">pdf</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                            Luke Breitfeller, Emily Ahn,
+                            David Jurgens, and Yulia Tsvetkov. <br/>
+                            
+                            Proceedings of 2019 Conference on Empirical Methods
+                            in Natural Language Processing and 9th International
+                            Joint Conference on Natural Language Processing
+                            (EMNLP-IJCNLP), 2019. <br/>
+                            <a href="https://www.aclweb.org/anthology/D19-1176.pdf">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/socinfo-2019.png"/>
+                          </td>
+                          <td class="paper-info">
+                            
+                            <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-34971-4_11.pdf">Perceptions of social roles across cultures.</a><br/>
+                            (<span style="font-weight: bold;">Nominated for Best Paper</span>)<br/>
+                            Meixing Dong, David Jurgens, Carmen Banea and Rada Mihalcea. <br/>
+                            Proceedings of Social Informatics (SocInfo), 2019. <br/>
+                            <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-34971-4_11.pdf">pdf</a> 
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/jama-open-2019.png"/>
+                          </td>
+                          <td class="paper-info">
+                            
+                            <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2735759">Suicide Among Older Adults Living in or Transitioning to Residential Long-term Care, 2003 to 2015</a><br/>
+                            Briana Mezuk, Tomohiro M. Ko, Viktoryia A. Kalesnikava, and David Jurgens.<br/>
+                            <i>JAMA Network Open</i> 2019;2(6):e195627 <br/>
+                            <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2735759">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt=""  src="images/acl2019-naija.png"/>
+                          </td>
+                          <td class="paper-info">
+                            
+                            <a href="">Wetin dey with these comments? Modeling Sociolinguistic Factors Affecting Code-switching Behavior in Nigerian Online Discussions</a><br/>
+                            Innocent Ndubuisi-Obi*, Sayan Ghosh*, David Jurgens.<br/>
+                            Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL), 2019 <br/>
+                            <a href="https://www.aclweb.org/anthology/P19-1625">pdf</a>                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td>
+                            <img class='paperimage' alt="The spectrum of abusive behaviors"  src="images/acl2019-abusive-language.png"/>
+                          </td>
+                          <td class="paper-info">
+                            
+                            <a href="https://arxiv.org/pdf/1906.01738.pdf">A Just and Comprehensive Strategy for Using NLP to Address Online Abuse</a><br/>
+                            David Jurgens, Libby Hemphill and Eshwar Chandrasekharan.<br/>
+                            Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL), 2019 <br/>
+                            <a href="https://arxiv.org/pdf/1906.01738.pdf">pdf</a>                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt="Caste attitudes"  src="images/icwsm-2019.png"/></td>
+                          <td class="paper-info">
+                            
+                            <a href="https://arxiv.org/pdf/1904.04176.pdf">Smart, Responsible, and Upper Caste Only:Measuring Caste Attitudes through Large-Scale Analysis of Matrimonial Profiles</a><br/>
+                             (<span style="font-weight: bold;">Best Paper Award</span>)<br/>
+                            Ashwin Rajadesingan, Ramaswami Mahalingam, David Jurgens.<br/>
+                            Proceedings of the AAAI International Conference on Web and Social Media (ICWSM), 2019 <br/>
+                            <a href="https://arxiv.org/pdf/1904.04176.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            Press: <a href="https://timesofindia.indiatimes.com/india/indian-matrimonial-sites-show-shift-in-attitude-towards-intercaste-marriage-study/articleshow/69812375.cms">Times of India</a>, <a href="https://www.devdiscourse.com/article/agency-wire/562412-indian-matrimonial-sites-show-shift-in-attitude-towards-intercaste-marriage-study">Devdiscourse</a>,
+                            <a href="https://phys.org/news/2019-06-matrimonial-website-profiles-indians-intercaste.html">Science X</a>,
+                            <a href-"https://www.business-standard.com/article/pti-stories/indian-matrimonial-sites-show-shift-in-attitude-towards-intercaste-marriage-study-119061600405_1.html">Business Standard</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt="Population inference"  src="images/www2019-m3.png"/></td>
+                          <td class="paper-info">
+                            
+                            <a href="https://dl.acm.org/citation.cfm?doid=3308558.3313684">Demographic Inference and Representative Population Estimates from Multilingual Social Media Data.</a><br/>
+                            Zijian Wang, Scott Hale, David Ifeoluwa Adelani, Przemyslaw Grabowicz, Timo Hartmann, Fabian Flöck and David Jurgens*.<br/>
+                            Proceedings of the Web Conference, 2019 <br/>
+                            <span style="font-size:8pt">*Corresponding senior author</span><br/>                        
+                            <a href="https://dl.acm.org/citation.cfm?doid=3308558.3313684">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="http://www.euagendas.org/m3demo/">demo</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/euagendas/m3inference">code</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="docs/www2019m3-poster.pdf">poster</a> (<span style="font-weight: bold;">Best Poster Presentation Award)</span>
+                            
+
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt="Group success"  src="images/www2019-groups.png"/></td>
+                          <td class="paper-info">
+                            
+                            <a href="https://dl.acm.org/citation.cfm?id=3313689">Are All Successful Communities Alike? Characterizing and Predicting the Success of Online Communities.</a><br/>
+                            Tiago Cunha, David Jurgens, Chenhao Tan and Daniel Romero.<br/>
+                            Proceedings of the Web Conference, 2019 <br/>                        
+                            <a href="https://dl.acm.org/citation.cfm?id=3313689">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      
+                      
+                      <h5>2018</h5>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/emnlp-2018.png"/></td>
+                          <td>
+                      
+                        <a href="http://www.aclweb.org/anthology/D18-1004">It's going to be okay: Measuring Access to Support in Online Communities.</a><br/>
+                        Zijian Wang and David Jurgens.<br/>
+                        Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), 2018 <br/>
+                        <a href="http://www.aclweb.org/anthology/D18-1004">pdf</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="http://anthology.aclweb.org/attachments/D/D18/D18-1004.Attachment.pdf">supplementary</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="http://blablablab.si.umich.edu/projects/support">website and data</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="https://github.com/davidjurgens/support">code</a> 
+
+                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/lrec-2018.png"/></td>
+                          <td>
+                      
+                            <a href="">RtGender: A Corpus of Responses to Gender for Studying Gender Bias.</a><br/>
+                                Rob Voigt, David Jurgens, Vinodkumar Prabhakaran, Dan Jurafsky, and Yulia Tsvetkov.<br/>
+                                Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC), 2018 <br/>
+                            <a href="https://web.stanford.edu/~jurafsky/pubs/rtgender.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://nlp.stanford.edu/robvoigt/rtgender/">data</a>
+
+                            
+                          </td>
+                        </tr>
+                      </table>
+                                
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/cite-2016.png"/></td>
+                          <td>
+
+                            <a href="https://www.transacl.org/ojs/index.php/tacl/article/viewFile/1266/313">Measuring the Evolution of a Scientific Field through Citation Frames.</a><br/>
+                            
+                            David Jurgens, Srijan Kumar, Raine Hoover, Dan McFarland, Dan Jurafsky. <br/>
+                            
+                            Transactions of the Association for Computational Linguistics (TACL). 2018. <br/>
+                            <a href="https://www.transacl.org/ojs/index.php/tacl/article/viewFile/1266/313">pdf</a>
+                            &nbsp;&middot;&nbsp;  <a href="http://jurgens.people.si.umich.edu/citation-function/">website and data</a>
+                            &nbsp;&middot;&nbsp;  <a href="https://github.com/davidjurgens/citation-function">code</a>
+                            &nbsp;&middot;&nbsp; <a href="https://vimeo.com/album/5391494/video/285802276" alt="video">video</a>
+                          </td>
+                        </tr>
+                      </table>                                          
 
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/loyalty_pic.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="files/loyalty.pdf" class='papertitle'>Loyalty in Online Communities</a><br/>
-                            <span style="font-weight:400">William L. Hamilton</span>*, Justine Zhang*, Cristian Danescu-Niculescu-Mizil, <br/>Jure Leskovec, Dan Jurafsky. <br/>
-                          <i>Proceedings of ICWSM </i>(short paper). 2017. <br/>
-                        <a href="files/loyalty.pdf">pdf</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                      
+                      <h5>2017</h5>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/socinfo-2017-fit.png"/></td>
+                          <td>
 
-                   <table class="table papers" style="margin-top: 15px;">
-										 <tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/copss2.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="http://www.pnas.org/content/early/2017/05/30/1702413114.full.pdf" class='papertitle'>Language from Police Body Camera Footage Shows Racial Disparities in Officer Respect</a><br/>
-                            <span style="font-size:13px">
-                              Rob Voigt, Nicholas P. Camp, Vinod Prabhakaran, <span style="font-weight:400">William L. Hamilton</span>,  Rebecca C. Hetey, Camilla M. Griffiths, David Jurgens, Dan Jurafsky, and Jennifer L. Eberhardt.</span><br/>
-                            <i>Proceedings of the National Academy of Science (PNAS).</i> 2017. <br/>
-                          <a href="http://www.pnas.org/content/early/2017/05/30/1702413114.full.pdf">pdf</a>
-                        </div>
-                        </td>
-											 </tr></tbody>
-                    </table>                                          
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-319-67217-5_29">An Analysis of Individuals' Behavior Change in Online Groups.</a><br/>
+                            
+                            David Jurgens, James McCorriston, and Derek Ruths. <br/>
+                            Proceedings of the 9th International Conference on Social Informatics (SocInfo). 2017. <br/>
 
-                    <h5>2016</h5>
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/socialsent.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                          <a href="https://arxiv.org/abs/1606.02820" class='papertitle'>Inducing Domain-Specific Sentiment Lexicons from Unlabeled Corpora</a><br/>
-                          <span style="font-weight:400">William L. Hamilton</span>, Kevin Clark, Jure Leskovec, Dan Jurafsky.<br/>
-                          <i>Proceedings of EMNLP. </i>2016. <br/>
-                          <a href="https://arxiv.org/pdf/1606.02820.pdf">pdf</a>
-                          &nbsp;
-                          &nbsp;
-                          <a href="http://nlp.stanford.edu/projects/socialsent">project website (code+data)</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                            <!-- &nbsp;&middot;&nbsp; -->
+                            <a href="docs/jurgens-mccorriston-ruths.socinfo2017.pdf">pdf</a> (<i>preprint</i>)
+                            
+                          </td>
+                        </tr>
+                      </table>
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/cultling.png"/>
-                        </div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                            <a href="https://arxiv.org/pdf/1606.02821.pdf" class='papertitle'>Cultural Shift or Linguistic Drift? Comparing Two Computational  Models of Semantic Change</a><br/>
-                          <span style="font-weight:400">William L. Hamilton</span>, Jure Leskovec, Dan Jurafsky.<br/>
-                          <i> Proceedings of EMNLP.</i> 2016. <br/>
-                          <a href="https://arxiv.org/pdf/1606.02821.pdf">pdf</a>
-                          &nbsp;
-                          &nbsp;
-                          <a href="http://nlp.stanford.edu/projects/histwords">project website (code+data)</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/socinfo-2017-wp.png"/></td>
+                          <td>
+                            
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-319-67256-4_43">Writer Profiling Without the Writer's Text.</a><br/>
+                            
+                            David Jurgens, Yulia Tsvetkov, and Dan Jurafsky. <br/>
+                            Proceedings of the 9th International Conference on Social Informatics (SocInfo). 2017. <br/>
 
-                    <table class="table papers" style="margin-top: 15px;">
-                      <tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/rmn.png"/>
-                        	</div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                          <a href="http://www.aclweb.org/anthology/W/W16/W16-5610.pdf" class='papertitle'>Learning Linguistic Descriptors of User Roles in Online Communities</a> &emsp;<br/>
-                          Alex Wang, <span style="font-weight:400">William L. Hamilton</span>, Jure Leskovec.<br/>
-                          <i>EMNLP Workshop on Computational Social Science (NLP+CSS).</i> 2016. <br/>
-                          <a href="http://www.aclweb.org/anthology/W/W16/W16-5610.pdf">pdf</a>
-                        </div>
-                        </td>
-											</tr></tbody>
-                    </table>                                          
+                            <!-- &nbsp;&middot;&nbsp; -->
+                            <a href="docs/jurgens-tsvetkov-jurafsky.socinfo2017.pdf">pdf</a> (<i>preprint</i>)
+                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/pnas-2017.png"/></td>
+                          <td>
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                          <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/diachronic.png"/></td>
-                      </div>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                          <div class="large-12 columns">
-                          <a href="https://arxiv.org/abs/1605.09096" class='papertitle'>Diachronic Word Embeddings Reveal Statistical Laws of Semantic Change</a><br/>
-                          <span style="font-weight:400">William L. Hamilton</span>, Jure Leskovec, Dan Jurafsky.<br/>
-                          <i>Proceedings of ACL.</i> 2016. <br/>
-                          <a href="https://arxiv.org/abs/1605.09096">pdf</a>
-                          &nbsp;
-                          &nbsp;
-                          <a href="http://nlp.stanford.edu/projects/histwords">project website (code+data)</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>                                          
+                            <a href="http://www.pnas.org/content/early/2017/05/30/1702413114.full.pdf">Language from Police Body Camera Footage Shows Racial Disparities in Officer Respect.</a><br/>
+                            
+                            Rob Voigt, Nicholas P. Camp, Vinod Prabhakaran, William L. Hamilton, Rebecca C. Hetey, Camilla M. Griffiths, David Jurgens, Dan Jurafsky, and Jennifer L. Eberhardt. <br/>
+                            <i>Proceedings of the National Academy of Science</i> (PNAS). 2017. <br/>
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                        <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/rhetorical.png"/>
-                        </div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                        <div class="large 1 columns">
-                          <a href="http://nlp.stanford.edu/pubs/prabhakaran2016rhetoricalroles.pdf" class='papertitle'>Predicting the Rise and Fall of Scientific Topics from Trends in their Rhetorical Framing</a><br/>
-                          Vinodkumar Prabhakaran, <span style="font-weight:400">William L. Hamilton</span>, Dan McFarland, Dan Jurafsky.<br/>
-                          <i>Proceedings of ACL. </i> 2016. <br/>
-                          <a href="http://nlp.stanford.edu/pubs/prabhakaran2016rhetoricalroles.pdf">pdf</a>
-                        </div>
-                        </td>
-											</tr></tbody>
-                    </table>                                          
+                            <!-- &nbsp;&middot;&nbsp; -->
+                            <a href="http://www.pnas.org/content/early/2017/05/30/1702413114.full.pdf">pdf</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/acl-2017.png"/></td>
+                          <td>
 
-                    <h5>2014</h5>
+                            <a href="">Incorporating Dialectal Variability for Socially Equitable Language Identification.</a><br/>
+                            
+                            David Jurgens, Yulia Tsvetkov, Dan Jurafsky. <br/>
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                        <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/thesis.png"/>
-                        </div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                        <div class="large-12 columns">
-                          <a href="https://www.caiac.ca/sites/default/files/publications/WillHamilton-Thesis.pdf" class='papertitle'>Compressed Predictive State Representation: An Efficient Moment-Method for Sequence Prediction and Sequential Decision Making</a><br/>
-                          <span style="font-weight:400">William L. Hamilton</span><br/>
-                          MSc Thesis. McGill University.<br/>
-                          <b> Canadian AI Association (CAIAC) 2014 MSc Thesis Award</b><br/>
-                          <a href="https://www.caiac.ca/sites/default/files/publications/WillHamilton-Thesis.pdf">pdf</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>
+                            Proceedings of the Annual Meeting of the Association for Computational Linguistics.  2017.<br/>
+                            <a href="http://aclweb.org/anthology/P/P17/P17-2009.pdf">pdf</a> 
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/davidjurgens/equilid">code</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="docs/jurgens-tsvetkov-jurafsky.acl2017.slides.pdf">slides</a>
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                        <div class="large-1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/moms.png"/>
-                        </div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                        <div class="large-12 columns">
-                          <a href="files/icml14-momcompare.pdf" class='papertitle'>Methods of Moments for Learning Stochastic Languages: Unified Presentation and Empirical Comparison</a><br/>
-                          Borja Balle*, <span style="font-weight:400">William L. Hamilton</span>*, Joelle Pineau &nbsp<br/>
-                          <i>Proceedings of ICML.</i> 2014. <br/>
-                          <a href="http://machinelearning.wustl.edu/mlpapers/paper_files/icml2014c2_balle14.pdf">pdf</a>
-                        </div>
-                        </td>
-												</tr></tbody>
-                    </table>
+                          </td>
+                        </tr>
+                      </table>                                                               
+                      
+                      
+                      <h5>2016</h5>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/icwsm-2016.png"/></td>
+                          <td>
 
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                        <div class="large 1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/cpsreq.png"/>
-                        </div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                        <div class="large 1 columns">
-                          <a href="http://arxiv.org/pdf/1312.0286.pdf" class='papertitle'>Efficient Learning and Planning with Compressed Predictive States</a>&emsp;&emsp;<br/>
-                          <span style="font-weight:400">William L. Hamilton</span>, Mahdi Milani Fard, Joelle Pineau.<br/>
-                          <i>Journal of Machine Learning Research (JMLR).</i> 2014.<br/>
-                          <a href="http://arxiv.org/pdf/1312.0286.pdf">pdf</a>&nbsp;&nbsp;<a href="https:github.com/williamleif/PSRToolBox">code</a>
-                        </div>
-                        </td>
-											</tr></tbody>
-                    </table>
+                            <a href="http://www.aaai.org/ocs/index.php/ICWSM/ICWSM16/paper/view/13137/12729">User Migration in Online Social Networks: A Case Study on Reddit During A Period of Community Unrest.</a><br/>
+                            
+                            Edward Newell*, David Jurgens*, Hardik Vala, Jad Sassine, Caitrin Armstrong, Derek Ruths and Haji Mohammad Saleem. <br/>
 
-                    <h5>2013</h5>
-                    <table class="table papers" style="margin-top: 15px;">
-											<tbody><tr>
-                        <td width=100px>
-                        <div class="large 1 columns">
-                          <img class='paperimage' alt=""  src="images/papers/gridworld.png"/>
-                        </div>
-                        </td>
-                        <td style="font-weight:370; font-family:Helvetica Neue; font-size:15px">
-                        <div class="large 1 columns">
-                          <a href="http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2013_hamilton13.pdf" class='papertitle'>Modelling Sparse Dynamical Systems with Compressed Predictive State Representations</a><br/>
-                          <span style="font-weight:400">William L. Hamilton</span>, Mahdi Milani Fard, Joelle Pineau.<br/>
-                          <i>Proceedings of ICML.</i> 2013.<br/>
-                          <a href="http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2013_hamilton13.pdf">pdf</a>&nbsp;&nbsp;<a href="https:github.com/williamleif/PSRToolBox">code</a>
-                        </div>
-                        </td>
-											</tr></tbody>
-                    </table>
+                            Proceedings of the 10th International AAAI Conference on Web and Social Media (ICWSM). 2016 <br/>
+                            <a href="http://www.aaai.org/ocs/index.php/ICWSM/ICWSM16/paper/view/13137/12729">pdf</a>
+                          </td>
+                        </tr>
+                      </table>                                          
 
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/lrec-2016.png"/></td>
+                          <td>
+                            
+                            <a href="http://www.lrec-conf.org/proceedings/lrec2016/pdf/1130_Paper.pdf"> Annotating Characters in Literary Corpora: A Scheme, the CHARLES Tool, and an Annotated Novel.</a><br/>
+                            
+                            Hardik Vala, Stefan Dimitrov, David Jurgens, Andrew Piper and Derek Ruths. <br/>
+
+                            Proceedings of the 10th edition of the Language Resources and Evaluation Conference (LREC). 2016. <br/>
+                            <a href="http://www.lrec-conf.org/proceedings/lrec2016/pdf/1130_Paper.pdf">pdf</a>
+                          </td>
+                        </tr>
+                      </table>                                          
+                      
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/jair-2016.png"/></td>
+                          <td>
+                            
+                            <a href="https://www.jair.org/media/4917/live-4917-9264-jair.pdf"> Semi-supervised Learning with Induced Word Senses for
+                              State of the Art Word Sense Disambiguation.</a><br/>
+                            
+                            Osman Baskaya and David Jurgens. <br/>
+
+                            Journal of Artificial Intelligence Research (JAIR). 55(1) pp. 1025-1058. <br/>
+                            <a href="https://www.jair.org/media/4917/live-4917-9264-jair.pdf">pdf</a>
+                          </td>
+                        </tr>
+                      </table>                                          
+
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/semeval-2016.png"/></td>
+                          <td><a href="">SemEval-2016 Task 14: Semantic Taxonomy Enrichment</a>.<br/>
+                      David Jurgens and Mohammad Taher Pilehvar.<br/>
+                      
+                      Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval). 2016. <br/>
+                      <a href="http://aclweb.org/anthology/S/S16/S16-1169.pdf">pdf</a>
+                      &nbsp;&middot;&nbsp;                      
+                      <a href="http://alt.qcri.org/semeval2016/task14/">website</a>                                              </tr>
+                      </table>
+
+                      
+
+                      <h5>2015</h5>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/emnlp-2015.png"/></td>
+                          <td>
+                            
+                            <a href="docs/vala-jurgens-piper-ruths_emnlp_2015.pdf"> Mr. Bennet, his coachman, and the Archbishop walk into
+                              a bar but only one of them gets recognized: On The
+                              Difficulty of Detecting Characters in Literary Texts.</a><br/>
+                            
+                            Hardik Vala, David Jurgens, Andrew Piper, and Derek Ruths. <br/>
+
+                            Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP). 2015. <br/>
+                            <a href="docs/vala-jurgens-piper-ruths_emnlp_2015.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="data/vala-et-al-2015_supplemental.zip">data</a>
+                          </td>
+                        </tr>
+                      </table>                                          
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src=""/></td>
+                          <td>
+                            
+                            <a href="http://www.cl.cam.ac.uk/~alk23/paper_24.pdf">Evaluating learning language representations.</a><br/>
+                            J. Karlgren, J. Callin, K. Collins-Thompson, A.C. Gyllensten, A. Ekgren, D. Jurgens, A. Korhonen, F. Olsson, M. Sahlgren, and H. Schütze. <br/>
+
+                            Proceedings of Conference and Labs of Evaluation Forum (CLEF). 2015. <br/>
+                            <a href="http://www.cl.cam.ac.uk/~alk23/paper_24.pdf">pdf</a> 
+                          </td>
+                        </tr>
+                      </table>                                          
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/starsem-2015.png"/></td>
+                          <td>
+                            
+                            <a href="docs/necsulescu-et-al_starsem-2015.pdf">Reading Between the Lines: Overcoming Data Sparsity for Accurate Classification of Lexical Relationships.</a><br/>
+                            Silvia Necsulescu, Sara Mendes, David Jurgens, Núria Bel, and Roberto Navigli. <br/>
+
+                            Proceedings of the Fourth Joint Conference on Lexical and Computational Semantics (*SEM). 2015. <br/>
+                            <a href="docs/necsulescu-et-al_starsem-2015.pdf">pdf</a> 
+                          </td>
+                        </tr>
+                      </table>                     
+
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/smsp-2015.png"/></td>
+                          <td>
+
+                            <a href="docs/jurgens-et-al_spsm-2015.pdf">Everyone's Invited: A New Paradigm For Evaluation on
+                              Non-transferable Datasets.</a><br/>
+                            David Jurgens, Tyler Finethy, Caitrin Armstrong, and Derek
+                            Ruths. <br/> Proceedings of the ICWSM Workshop on Standards and
+                            Practices in Large-Scale Social Media Research. 2015. <br/>
+                            <a href="docs/jurgens-et-al_spsm-2015.pdf">pdf</a> 
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/networkdynamics/geoinference-method-template">code</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/networkdynamics/freesr">FREESR code</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="http://freesr.networkdynamics.org/">FREESR website</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="http://networkdynamics.org/resources/geoinference/">project website</a>
+
+                          </td>
+                        </tr>
+                      </table>                     
+                      
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/icwsm-2015.png"/></td>
+                          <td>
+
+                            <a href="docs/jurgens-et-al_icwsm-2015.pdf"> Geolocation Prediction in Twitter Using Social Networks: A Critical Analysis and Review of Current Practice.</a><br/>                           
+                            David Jurgens, Tyler Finethy, James McCorriston, Yi Tian Xu, and Derek Ruths.<br/>
+
+                            Proceedings of the 9th International AAAI Conference on Web and Social Media (ICWSM). 2015 <br/>
+                            
+                            <a href="docs/jurgens-et-al_icwsm-2015.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="docs/jurgens-et-al_icwsm-2015_poster.pdf">poster</a>                            
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/networkdynamics/geoinference">code</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="http://networkdynamics.org/resources/geoinference/">website</a>
+                          </td>
+                        </tr>
+                      </table>                     
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/icwsm-2015c.png"/></td>
+                          <td>
+
+                            <a href="docs/jurgens-mccorriston-ruths_icwsm-2015.pdf"> An Analysis of
+                              Exercising Behavior in Online Populations.
+                            </a><br/>
+                            
+                            David Jurgens, James McCorriston, and Derek Ruths.<br/>
+
+                            Proceedings of the 9th International AAAI Conference on Web and Social Media (ICWSM). 2015 <br/>
+
+                            <a href="docs/jurgens-mccorriston-ruths_icwsm-2015.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="docs/jurgens-mccorriston-ruths_icwsm-2015_poster.pdf">poster</a>
+                            &nbsp;&middot;&nbsp;                            
+                            <a href="http://networkdynamics.org/resources/exercise/">website</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/icwsm-2015b.png"/></td>
+                          <td>
+
+                            <a href="docs/mccorriston-jurgens-ruths_icwsm-2015.pdf"> Organizations are Users Too:
+                            Characterizing and Detecting the Presence of
+                            Organizations on Twitter.</a><br/>
+                            
+                            James McCorriston, David Jurgens, and Derek Ruths.<br/>
+
+                            Proceedings of the 9th International AAAI Conference on Web and Social Media (ICWSM). 2015 <br/>
+
+                            <a href="docs/mccorriston-jurgens-ruths_icwsm-2015.pdf">pdf</a> 
+                            &nbsp;&middot;&nbsp;
+                            <a href="http://networkdynamics.org/resources/software/humanizr/">website</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/networkdynamics/humanizr">code</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="data/humanizr-data.zip">data</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/lre-2015.png"/></td>
+                          <td>
+                            <a href="docs/jurgens-pilehvar-navigli-2015-lrev.pdf"> Cross Level Semantic Similarity: An Evaluation Framework for Universal Measures of Similarity.</a><br/>
+                            
+                            David Jurgens, Mohammad Taher Pilehvar, and Roberto Navilgi.<br/>
+
+                            Journal of Language Resources and Evaluation.  50(1) pp. 5-30.<br/>
+
+                            <a href="docs/jurgens-pilehvar-navigli-2015-lrev.pdf">pdf</a>  (preprint)
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/naacl-2015.png"/></td>
+                          <td>
+                            <a href=""> Reserating the awesometastic: An automatic extension
+                              of the WordNet taxonomy for novel terms.</a><br/>
+                            
+                            David Jurgens and Mohammad Taher Pilehvar.<br/>
+
+                            Proceeding of the Conference of the North
+                            American Chapter of the Association for
+                            Computational Linguistics – Human Language
+                            Technologies (NAACL-HLT). 2015. <br/>
+
+                            <a href="docs/jurgens-pilehvar_naacl-2015.pdf">pdf</a> 
+                            &nbsp;&middot;&nbsp;
+                            <a href="docs/jurgens-pilehvar_naacl-2015_poster.pdf">poster</a> 
+                            &nbsp;&middot;&nbsp;                            
+                            <a href="http://cs.mcgill.ca/~jurgens/crown/">download</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/davidjurgens/crown">website</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <h5>2014</h5>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/tacl-2014.png"/></td>
+                          <td>
+                            <a href="https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/viewFile/421/65">It's All Fun and Games until Someone Annotates: Video
+                            Games with a Purpose for Linguistic Annotation.</a><br/>
+                            David Jurgens and Roberto Navigli.<br/>  Transactions
+                            of the Association for Computational Linguistics (TACL)
+                            2014. <br/>
+                            <a href="https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/viewFile/421/65">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            slides: <a href="docs/jurgens-navigli-2014-tacl.pdf">pdf</a>, <a href="docs/jurgens-navigli-2014-tacl.pptx">pptx</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="http://www.knowledgeforge.org/">games!</a>                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/big-data-2014.png"/></td>
+                          <td>
+                            <a href="docs/compton-jurgens-allen_bigdata-2014.pdf">Geotagging One Hundred Million Twitter Accounts with Total Variation Minimization.</a><br/>
+                            Ryan Compton, David Jurgens, and David Allan.<br/>
+                            Proceedings of the IEEE International Conference on Big Data. 2014. <br/>
+                            <a href="docs/compton-jurgens-allen_bigdata-2014.pdf">pdf</a>
+                            <br/>
+                            Press:
+                            <a href="http://www.forbes.com/sites/thomasbrewster/2015/03/07/twitter-location-can-be-determined-through-friends/">Forbes</a>,
+                            <a href="http://www.technologyreview.com/view/527246/other-interesting-arxiv-papers-week-ending-may-10-2014/">MIT Technology Review</a>,
+                            <a href="http://www.businessinsider.com/twitter-location-research-at-mentions-cornell-2015-3">Business Insider</a>,
+                            <a href="http://dailycaller.com/2015/03/06/how-your-tweets-can-reveal-your-real-location/">Daily Caller</a>,
+                            <a href="https://www.schneier.com/blog/archives/2015/03/geotagging_twit.html">Schneier on Security</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/code-switching-2014.small.png"/></td>
+                          <td>
+                            <a href="http://www.aclweb.org/anthology/W/W14/W14-39.pdf#page=59">Twitter users #CodeSwitch hashtags! #MoltoImportante #wow #헐.</a><br/>
+                            David Jurgens, Stefan Dimitrov, and Derek Ruths.<br/>
+                            Proceedings of The First Workshop on Computational Approaches to Code Switching. 2014. <br/>
+                            <a href="http://www.aclweb.org/anthology/W/W14/W14-39.pdf#page=59">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="http://networkdynamics.org/2015/04/09/code-switching-in-twitter-wow-tresinteressant/">blog post</a>
+                          </td>
+                        </tr>
+                      </table>
+                     
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/semeval-2014.png"/></td>
+                          <td><a href="http://alt.qcri.org/semeval2014/task3/data/uploads/semeval2014-task3.pdf">SemEval-2014 Task 3: Cross-Level Semantic Similarity</a>.<br/>
+                      David Jurgens, Mohammad Taher Pilehvar, and Roberto Navigli.<br/>
+                      
+                      Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval) 2014. <br/>
+                      <a href="http://alt.qcri.org/semeval2014/task3/data/uploads/semeval2014-task3.pdf">pdf</a>
+                      &nbsp;&middot;&nbsp;
+                      <a href="http://www.pilevar.com/taher/pubs/Semeval_2014_Jurgensetal.slides.pdf">slides</a>
+                      &nbsp;&middot;&nbsp;                      
+                      <a href="http://alt.qcri.org/semeval2014/task3/">website</a>                                              </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/acl-2014.png"/></td>
+                    <td><a href="http://wwwusers.di.uniroma1.it/~navigli/pubs/ACL_2014_Vannellaetal.pdf">Validating and Extending Semantic Knowledge Bases using Video Games with a Purpose.</a><br/>
+                      Daniele Vannella, David Jurgens, Daniele Scarfini, Domenico Toscani, and Roberto Navigli.<br/>
+                      
+                      Proceedings of the Annual Meeting for the Association for
+                      Computational Linguistics (ACL) 2014. <br/>
+                      <a href="http://wwwusers.di.uniroma1.it/~navigli/pubs/ACL_2014_Vannellaetal.pdf">pdf</a>
+                      &nbsp;&middot;&nbsp;
+                      <a href="docs/acl-2014-poster.pdf">poster</a>
+                      &nbsp;&middot;&nbsp;
+                      <a href="http://www.knowledgeforge.org/">games!</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/lrec-2014.png"/></td>
+                    <td><a href="http://www.lrec-conf.org/proceedings/lrec2014/pdf/904_Paper.pdf">An analysis of ambiguity in word sense annotations.</a><br/>
+                      David Jurgens.<br/>
+                      
+                      Proceedings of the 9th International Conference on Language Resources and Evaluation (LREC)  2014. <br/>
+                      <a href="http://www.lrec-conf.org/proceedings/lrec2014/pdf/904_Paper.pdf">pdf</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h5>2013</h5>
+                      
+                      <!--
+                      <a name="2013"/>
+                      -->
+                      <table  class="table papers" style="margin-top: 15px;">                      
+                        <tr>
+                          <td><img class='paperimage' alt=""  src="images/acl-2013.png"/></td>
+                    <td><a href="http://wwwusers.di.uniroma1.it/~navigli/pubs/ACL_2013_Pilehvar_Jurgens_Navigli.pdf">Align, Disambiguate and Walk: A
+                        Unified Approach for Measuring Semantic Similarity.</a><br/>
+                      (<span style="font-weight: bold;">Best paper nominee</span>)<br/>
+
+                      Mohammad T. Pilehvar, David Jurgens, and Roberto
+                      Navigli.<br/>
+                      
+                      Proceedings of the Annual Meeting for the Association for
+                      Computational Linguistics (ACL) 2013. <br/>
+                      
+                      <a href="http://wwwusers.di.uniroma1.it/~navigli/pubs/ACL_2013_Pilehvar_Jurgens_Navigli.pdf">pdf</a>
+                      &nbsp;&middot;&nbsp;
+                      <a href="docs/acl-2013-slides.pdf">slides</a>
+
+                      &nbsp;&middot;&nbsp;
+                      <a href="https://github.com/pilehvar/ADW">code</a>
+                          </td>
+                        </tr>
+                      </table>
+
+
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr><td><a href=""><img class='paperimage' alt=""  src="images/icwsm-2013.png"/></a></td>                          
+                          <td><a href="http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/viewFile/6067/6366">
+                              That's what friends are for: Inferring location in online communities based on social relationships.</a><br/>
+
+                            David Jurgens.<br/>
+                      
+                            Proceedings of the 7th International AAAI Conference on Weblogs and Social Media (ICWSM) 2013. <br/>
+                      
+                      <a href="http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/viewFile/6067/6366">pdf</a> &nbsp;&middot;&nbsp;
+                      <a href="docs/icwsm-2013-slides.pdf">slides</a>
+                      &nbsp;&middot;&nbsp;
+                      <a href="http://videolectures.net/icwsm2013_jurgens_social_relationships/">video</a>
+                      &nbsp;&middot;&nbsp;
+                      Press:
+                      <a href="http://crowdresearch.org/blog/?p=7977">Follow the Crowd</a>,
+                      
+                      <a href="http://www.technologyreview.com/news/519321/how-twitter-can-cash-in-with-new-technology/">MIT Technology Review</a>
+                          </td>
+                        </tr>
+                      </table>
+                      
+
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/naacl-2013.jpg"/></a></td>
+                          <td><a href="http://www.aclweb.org/anthology/N/N13/N13-1062.pdf">
+                              Embracing Ambiguity: A Comparison of Annotation Methodologies for Crowdsourcing Word Sense Labels.</a><br/>
+                            
+                            David Jurgens.<br/>
+                            
+                            Proceedings of the North American Chapter of the Association for Computational Linguistics (NAACL) 2013. <br/>
+                            
+                            <a href="http://www.aclweb.org/anthology/N/N13/N13-1062.pdf">pdf</a> &nbsp;&middot;&nbsp;
+                            <a href="docs/naacl-2013-poster.pdf">poster</a>
+                          </td>
+                        </tr>
+                      </table>
+
+
+                      <table class="table papers" style="margin-top: 15px;">                      
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/aaai-ss-2013.png"/></a></td>
+                          <td><a href="http://www.researchgate.net/profile/David_Jurgens/publication/259191847_Characterizing_Online_Discussions_in_Microblogs_Using_Network_Analysis/links/0deec52a537abba63b000000.pdf">
+                              Characterizing Online Discussions in Microblogs Using Network Analysis.</a><br/>
+                            
+                            Veronika Strnadova, David Jurgens, and Tsai-Ching Lu.<br/>
+                            
+                            Proceedings of the AAAI Spring Symposium on Analyzing Microtext, 2013. <br/>
+                            
+                            <a href="http://www.researchgate.net/profile/David_Jurgens/publication/259191847_Characterizing_Online_Discussions_in_Microblogs_Using_Network_Analysis/links/0deec52a537abba63b000000.pdf">pdf</a> 
+                          </td>
+                        </tr>
+                      </table>
+                      
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr><td><a href=""><img class='paperimage' alt=""  src="images/fuzzy-clusters.png"/></a></td>
+                          <td><a href="http://www.aclweb.org/anthology/S/S13/S13-2049.pdf">SemEval-2013
+                              Task 13: Word Sense Induction for Graded and Non-Graded
+                              Senses.</a><br/>
+                            
+                            David Jurgens and Ioannis Klapaftis.<br/>
+                            
+                            Proceedings of the 7th International Workshop on Semantic Evaluation (SemEval) 2013. <br/>
+                      
+                            <a href="http://www.aclweb.org/anthology/S/S13/S13-2049.pdf">pdf</a> &nbsp;&middot;&nbsp;
+                            <a href="docs/semeval-2013-task13-errata.pdf">errata</a>  &nbsp;&middot;&nbsp;
+                            <a href="docs/semeval-2013-task-13-slides.pdf">slides</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="www.cs.york.ac.uk/semeval-2013/task13">website</a>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="http://babelnet.org/imgs/babelnet-2.0-new.png"/></a></td>
+                          <td><a href="http://wwwusers.di.uniroma1.it/~navigli/pubs/Semeval_2013_Navigli_etal.pdf">SemEval-2013 Task 12: Multilingual Word Sense Disambiguation.</a><br/>
+                            
+                            Roberto Navigli, David Jurgens, and Daniele Vanilla.<br/>
+                            
+                            Proceedings of the 7th International Workshop on Semantic Evaluation (SemEval) 2013. <br/>
+                            
+                            <a href="http://wwwusers.di.uniroma1.it/~navigli/pubs/Semeval_2013_Navigli_etal.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="www.cs.york.ac.uk/semeval-2013/task12">website</a>
+                           
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h5>2012</h5>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/icwsm-2012.png"/></a></td>
+                          <td><a href="http://www.researchgate.net/profile/David_Jurgens/publication/267800003_Temporal_Motifs_Reveal_the_Dynamics_of_Editor_Interactions_in_Wikipedia/links/00463529df6684167d000000.pdf">
+                              Temporal Motifs Reveal the Dynamics of Editor Interactions in Wikipedia.</a><br/>
+                            
+                            David Jurgens and Tsai-Ching Lu.<br/>
+                            
+                            Proceedings of the 6th International AAAI Conference on Weblogs and Social Media (ICWSM) 2012. <br/>
+                                                        
+                            <a href="http://www.researchgate.net/profile/David_Jurgens/publication/267800003_Temporal_Motifs_Reveal_the_Dynamics_of_Editor_Interactions_in_Wikipedia/links/00463529df6684167d000000.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="http://videolectures.net/icwsm2012_jurgens_wikipedia/">video</a>
+
+                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/semeval-2012.png"/></a></td>
+                          <td><a href="http://anthology.aclweb.org/S/S12/S12-1047.pdf">
+                              Semeval-2012 task 2: Measuring degrees of relational similarity.</a><br/>
+                            
+                            David Jurgens, Saif M Mohammad, Peter D Turney, and Keith J Holyoak.<br/>
+                            
+                            Proceedings of the 6th International Workshop on Semantic Evaluation (SemEval), 2012. <br/>
+                            
+                            <a href="http://anthology.aclweb.org/S/S12/S12-1047.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="docs/semeval-2012-task-2-slides.pdf">slides</a>                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/starsem-2012.png"/></a></td>
+                          <td><a href="http://anthology.aclweb.org/S/S12/S12-1027.pdf">
+                              An Evaluation of Graded Sense Disambiguation using Word Sense Induction.</a><br/>
+                            
+                            David Jurgens.<br/>
+                            
+                            Proceedings of the First Joint Conference on Lexical and Computational Semantics (*SEM), 2012. <br/>
+                            
+                            <a href="http://anthology.aclweb.org/S/S12/S12-1027.pdf">pdf</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="docs/starsem-2012-slides.pdf">slides</a>                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/websci-2012.png"/></a></td>
+                          <td><a href="docs/jurgens-websci2012.pdf">
+                              Friends, Enemies, and Lovers: Detecting Communities in Networks Where Relationships Matter.</a><br/>
+                            
+                            David Jurgens and Tsai-Ching Lu.<br/>
+                            
+                            Proceedings of Web Science, 2012. <br/>
+                            
+                            <a href="docs/jurgens-websci2012.pdf">pdf</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+
+                      <h5>2011</h5>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/textgraphs-2011.png"/></a></td>
+                          <td><a href="http://anthology.aclweb.org/W/W11/W11-1104.pdf">
+                              Word sense induction by community detection.</a><br/>
+                            
+                            David Jurgens.<br/>
+                            
+                            Proceedings of the Workshop on Graph-based Methods for Natural Language Processing (TextGraphs), 2011. <br/>
+                            
+                            <a href="http://anthology.aclweb.org/W/W11/W11-1104.pdf">pdf</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
+
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/unsup-2011.png"/></a></td>
+                          <td><a href="http://anthology.aclweb.org/W/W11/W11-2214.pdf">
+                              Measuring the impact of sense similarity on word sense induction.</a><br/>
+                            
+                            David Jurgens and Keith Stevens.<br/>
+                            
+                            Proceedings of the First Workshop on Unsupervised Learning in NLP, 2011. <br/>
+                            
+                            <a href="http://anthology.aclweb.org/W/W11/W11-2214.pdf">pdf</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                      
+
+                      
+                      <h5>2010</h5>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/acl-2010.png"/></a></td>
+                          <td><a href="http://anthology.aclweb.org/P/P10/P10-4006.pdf">The
+                          S-Space Package: An Open Source Package for Word Space
+                          Models.</a><br/>
+                            
+                            David Jurgens and Keith Stevens.<br/>
+                            
+                            Proceedings of the ACL 2010 System Demonstrations, 2010. <br/>
+                            
+                            <a href="http://anthology.aclweb.org/P/P10/P10-4006.pdf">pdf</a>                            
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://github.com/fozziethebeat/S-Space">website</a>
+                            &nbsp;&middot;&nbsp;
+                            Mailing Lists: <a href="https://groups.google.com/forum/#!forum/s-space-users">Users</a>, <a href="https://groups.google.com/forum/#!forum/s-space-research-dev">Developers</a>
+                            
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/gems-2010.png"/></a></td>
+                          <td><a href="http://anthology.aclweb.org/W/W10/W10-2801.pdf">
+                              Capturing nonlinear structure in word spaces through dimensionality reduction.</a><br/>
+                            
+                            David Jurgens and Keith Stevens.<br/>
+                            
+                            Proceedings of the ACL Workshop on GEometrical Models of Natural Language (GEMS), 2010. <br/>
+                            
+                            <a href="http://anthology.aclweb.org/W/W10/W10-2801.pdf">pdf</a>
+                           
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/semeval-2010.png"/></a></td>
+                          <td><a href="http://anthology.aclweb.org/S/S10/S10-1080.pdf">
+                              HERMIT: Flexible clustering for the SemEval-2 WSI task.</a><br/>
+                            
+                            David Jurgens and Keith Stevens.<br/>
+                            
+                            Proceedings of the 5th International Workshop on Semantic Evaluation (SemEval), 2010. <br/>
+                            
+                            <a href="http://anthology.aclweb.org/S/S10/S10-1080.pdf">pdf</a>
+                           
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      
+                      <h5>2009</h5>
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/eett-2009.png"/></a></td>
+                          <td><a href="http://www.researchgate.net/profile/David_Jurgens/publication/234768472_Event_detection_in_blogs_using_temporal_random_indexing/links/0c960527b99936a51a000000.pdf#page=21">Event detection in blogs using temporal random indexing.</a><br/>
+                            
+                            David Jurgens and Keith Stevens.<br/>
+                            
+                            Proceedings of the Workshop on Events in Emerging Text Types, 2009. <br/>
+                            
+                            <a href="http://www.researchgate.net/profile/David_Jurgens/publication/234768472_Event_detection_in_blogs_using_temporal_random_indexing/links/0c960527b99936a51a000000.pdf#page=21">pdf</a>
+                           
+                          </td>
+                        </tr>
+                      </table>
+
+
+                      <h5>2004</h5>
+
+
+                      <table class="table papers" style="margin-top: 15px;">
+                        <tr ><td><a href=""><img class='paperimage' alt=""  src="images/gis-2004.png"/></a></td>
+                          <td><a href="http://www.cse.wustl.edu/~pless/papers/p94-pless.pdf">Road extraction from motion cues in aerial video.</a><br/>
+                            
+                            Robert Pless and David Jurgens.<br/>
+                            
+                            Proceedings of the 12th annual ACM international workshop on Geographic information systems, 2004. <br/>
+                            
+                            <a href="http://www.cse.wustl.edu/~pless/papers/p94-pless.pdf">pdf</a>
+                           
+                          </td>
+                        </tr>
+                      </table>
+
+
+                      
+                    </div>                  
                   </div>
-              </div>
-              </div>
-            </div>
-          <div class="tabs-content" data-tabs-content="example-tabs">
-           <div class="tabs-panel" id="panel2">
-            <div class="row">
-              <div class="large-12 columns">
-								<h6>COMP 551 --- Applied Machine Learning </h6>
-									<p>I am teaching a course on Applied Machine Learning at McGill. 
-									  I taught the course in the winter semester of 2019 and will teach it again in the fall of 2019,
-										Check out the <a href="https://cs.mcgill.ca/~wlh/comp551/">course website</a> for more information.</p>
-								<br>
-								<h6>COMP 766 --- Graph Representation Learning </h6>
-									<p>In winter 2020, I will teach a graduate-level course on Graph Representation Learning.
-										Check out the <a href="https://cs.mcgill.ca/~wlh/comp766/">course website</a> for more information.</p>
+                </div>
+              </section>
+              <section>
+                <p class="title" data-section-title><a href="#panel2">Biographical Sketch</a></p>
+                <div class="content" data-section-content>
+                  <p style="font-size:16px; font-weight:300; line-height: 24px;">
+                    David Jurgens is an assistant professor in
+                    the <a href="http://si.umich.edu">School of Information</a>
+                    at the University of Michigan.  He holds a PhD from the
+                    University of California Los Angeles and was a postdoctoral
+                    scholar in the Department of Computer Science at Stanford
+                    University and prior at McGill University. His research
+                    combines natural language processing, network science and
+                    data science to discover, explain and predict human behavior
+                    in large social systems.  His research has been published in
+                    top computational social science and natural language
+                    processing venues including PNAS, WWW, ACL, ICWSM, EMNLP, and
+                    others.  His work has won the Cozzarelli Prize from the
+                    National Academy of Science, Cialdini Prize from the Society
+                    for Personality and Social Psychology, best paper at ICWSM and W-NUT,
+                    best paper nomination at ACL and Web Science, and has been featured in news
+                    outlets such as the BBC, Time, MIT Technology Review, New Scientist, and
+                    Forbes.
 
-          </div>       
-          </div>       
-          </div>       
-          </div>       
-          <div class="tabs-content" data-tabs-content="example-tabs">
-           <div class="tabs-panel" id="panel3">
-            <div class="row">
-              <div class="large-12 columns">
-<p>
-William (Will) Hamilton is an Assistant Professor of Computer Science in the School of Computer Science at McGill University, a Canada CIFAR Chair in AI, and a member of the Mila AI Institute of Quebec. Will completed his PhD in Computer Science at Stanford University in 2018.
-He received the 2018 Arthur Samuel Thesis Award for best Computer Science PhD Thesis from Stanford University, the 2014 CAIAC MSc Thesis Award for best AI-themed MSc thesis in Canada, as well as an honorable mention for the 2013 ACM Undergraduate Researcher of the Year.
-His interests lie at the intersection of machine learning, network science, and natural language processing, with a current emphasis on the fast-growing subject of graph representation learning. 
- Will was the SAP Stanford Graduate Fellow (2014-2018), received the Cozzarelli Best Paper Award from the Proceedings of the National Academy of Sciences (PNAS) in 2017, and his work has been featured in numerous media outlets, including Wired, The New York Times, and The BBC. 
+                    
 
-          </div>       
-          </div>       
-          </div>       
-          </div>       
+                  <p>
+                    <i>How he got there:</i>  Before joining UMSI, David was a postdoctoral scholar, jointly in the
+                    the <a href="http://nlp.stanford.edu/">Stanford NLP</a>
+                    and <a href="http://snap.stanford.edu//">SNAP</a>
+                    Groups
+                    under <a href="http://web.stanford.edu/~jurafsky/">Dan
+                    Jurafsky</a>,
+                    <a href="http://cs.stanford.edu/people/jure/">Jure
+                    Leskovec</a>
+                    and <a href="https://profiles.stanford.edu/daniel-mcfarland">Dan
+                    McFarland</a>.  Prior, he ventured beyond the wall to the cold regions of Montreal (don't let the idyllic summers fool you) and was a postdoctoral scholar
+                    at McGill University in
+                    the <a href="http://www.networkdynamics.org/">Network
+                    Dynamics</a> group with
+                    <a href="http://www.derekruths.com/">Derek Ruths</a>.
+                    Before finishing his PhD, he was a research scientist at
+                    the <a href="http://lcl.uniroma1.it/">Linguistics Computing
+                    Laboratory</a> at Sapienza University of Rome under Roberto
+                    Navigli.  During his PhD, he was concurrently a visiting
+                    researcher at
+                    the <a href="http://www.hrl.com/laboratories/labs_issl.html">Information
+                    and Systems Science Lab</a>
+                    at <a href="http://www.hrl.com">HRL Laboratories</a>.  After
+                    trips abroad and to Malibu, he received his PhD in Computer
+                    Science from the <a href="http://cs.ucla.edu">University of
+                    California, Los Angeles</a>
+                    under <a href="http://cs.ucla.edu/~dyer/">Michael Dyer</a>.
+                    Early in his career before he discovered you could study
+                    language and people, he received his BA in Philosophy and
+                    Political Science and an MS in Computer Science on Computer
+                    Vision
+                    under <a href="http://www.cse.wustl.edu/~pless/">Robert
+                    Pless</a> from <a href="http://www.wustl.edu">Washington
+                    University in St. Louis</a>.
+                  </p>
+                </div>
+              </section>
+
+
+              <section>
+                <p class="title" data-section-title><a href="#panel2">Teaching</a></p>
+                <div class="content" data-section-content>                   
+
+                  <p>
+                    Fall 2017, 2018: SI 671 -- <a href="https://www.si.umich.edu/programs/courses/671#gsc.tab=0">Data Mining: Methods and Applications</a>
+                  </p>
+
+                  <p>
+                    Winter 2017&mdash;<i>present</i>: SI 630 -- <a href="https://www.si.umich.edu/programs/courses/630#gsc.tab=0">Natural Language Processing: Algorithms and People</a>
+                  </p>
+
+                  <p>
+                    Fall 2020&mdash;<i>present</i>: SI 650 / EECS 549 -- <a href="https://www.si.umich.edu/programs/courses/650#gsc.tab=0">Information Retrieval</a>
+                  </p>
+
+                  <p>
+                    Winter 2023: SI 330 -- <a href="https://www.si.umich.edu/programs/courses/330">Data Manipulation</a>
+                  </p>
+
+                  
+
+                  <p>
+                    Fall 2019: SI 710 -- <a href="https://docs.google.com/document/d/1Ouyqz-emtOI-ohwTOdOZpcjcEFtPPilhJDso8sjgByU/edit?usp=sharing">PhD Seminar: Computational
+                    Sociolinguistics</a> <br/> A new course!  On computational
+                    sociolinguistics!  With actual computation and actual
+                    sociolinguistics!  If any of that excites you, drop me an
+                    email and I can share more details.  
+                  </p>
+                  
+                </div>
+              </section>
+
+
+              
+              <section>
+                <p class="title" data-section-title><a href="#panel2">Activities</a></p>
+                <div class="content" data-section-content>
+
+                  <p>Being a faculty involves too many things to reasonably keep
+                  track of so this page is just left out of date in favor of
+                  staying sane. For folks who are very interested still, please
+                  see my <a href="docs/Jurgens,David_CV.pdf">CV</a> for a more up-to-date list.</p>
+                  
+                  <h3><strike>Current</strike></h3>
+                  
+                  <ul style="font-size:16px; font-weight:300; line-height: 24px; margin-left: 20px ">
+                    <li>Co-editor of a <i>Frontiers</i> special issue on Computational Sociolinguistics.  The journal has a rolling deadline so feel free to submit <a href="https://www.frontiersin.org/research-topics/9580/computational-sociolinguistics">here</a>, or just read the papers as they appear.
+                    <li>Area chair for Social Media for ACL and EMNLP
+                    <li>Sponsorship chair for ICWSM 2019.
+                    <li>Senior PC for WWW 2020 (Web &amp; Society)
+                    <li> Co-chair of the <a href="https://sites.google.com/site/nlpandcss/nlp-css-at-naacl-2019?authuser=0">International Workshop on NLP and
+                        Computational Social Science</a> at ACL-2017 with Dirk Hovy,
+                      David Bamman, Oren
+                      Tsur, and Svitlana Volkova.                      
+                  </ul>
+
+                  </ul>
+                  <h3>Past</h3>
+                  <ul style="font-size:16px; font-weight:300; line-height: 24px; margin-left: 20px ">
+                    <li>
+                      Data Chair for <a href="http://www.icwsm.org/2017/organization/organization/">ICWSM 2017</a>
+                    </li>
+                    <li>
+                      Co-chair of the <a href="https://sites.google.com/site/nlpandcss/nlp-css-at-acl-2017">International Workshop on NLP and
+                      Computational Social Science</a> at ACL-2017 with Dirk Hovy,
+                      David Bamman, A. Seza Dogruoz, Brendan O'Connor, Oren
+                      Tsur, and Svitlana Volkova.
+                    </li>
+
+                    
+                    <li>
+                      Co-chair of the International Workshops on NLP and
+                      Computational Social Science at EMNLP-2016 and at
+                      WebSci-2016 with Dirk Hovy, David Bamman, A. Seza Dogruoz,
+                      Jacob Eisenstein, Brendan O'Connor, Alice Oh, Oren Tsur,
+                      and Svitlana Volkova
+                    </li>
+                    <li>
+                      General reviewing habits
+                      Program Committee at various (most) times for WWW, ICWSM, NAACL, ACL, EMNLP, CSCW, LREC, EACL;
+                      External Reviewer for CHI (rarely).
+                    </li>
+                    <li>
+                      Co-chair of the International Workshop of Semantic Evaluation (SemEval) workshop in
+                      <a href="http://alt.qcri.org/semeval2015/">2015</a> with Daniel Cer, Preslav Nakov, and Torsten Zesch
+                      and in <a href="http://alt.qcri.org/semeval2016/">2016</a>
+                      with Daniel Cer, Marine Carpuat, and Steven Bethard
+                    </li>
+                    <li>
+                      Co-organizing <a href="http://alt.qcri.org/semeval2016/task14/">SemEval-2016
+                        Task 14: Semantic Taxonomy Enrichment</a> with Mohammad
+                        Taher Pilehvar.
+                    </li>
  
+                    <li>
+                      Co-presented the tutorial "Semantic Similarity Frontiers:
+                      From Concepts to Documents" with Mohammad Taher Pilehvar
+                      at <a href="http://www.emnlp2015.org/tutorials.html">EMNLP-2015</a> -- over 150 registered attendees!
+                      <br/>
+                        Check out
+                        our <a href="https://github.com/davidjurgens/similarity-tutorial">annotated
+                        bibliography</a> of recent semantic similarity papers on
+                        GitHub.
+                    </li>
+                   
+                    <li>
+                      Co-presented the tutorial "Multilingual Semantic
+                    Processing" with Roberto Navigli at LREC-2014
+                  </li>
+                  <li>
+                    Co-organizer
+                    of <a href="http://alt.qcri.org/semeval2014/task3/">SemEval-2014
+                    Task 3: Cross-Level Semantic Similarity</a> with Mohammad
+                    Taher Pilehvar and Roberto Navigli.
+                  </li>
+                  <li>
+                    Co-organizer
+                    of <a href="http://alt.qcri.org/semeval2013/task12/">SemEval-2013
+                    Task 12: Multilingual Word Sense Disambiguation</a> with
+                    Roberto Navigli and Daniele Vannella
+                  </li>
+                  <li>
+                    Co-organizer
+                    of <a href="http://alt.qcri.org/semeval2013/task13/">SemEval-2013
+                    Task 13: Word Sense Induction for Graded and Non-Graded
+                    Senses</a> with Ioannis Klapaftis
+                  </li>
+                  <li>
+                    Co-organizer
+                    of <a href="http://alt.qcri.org/semeval2013/task12/">SemEval-2012
+                    Task 2: Measuring Degrees of Relational Similarity</a> with
+                    Saif M. Mohammad, Peter D. Turney, and Keith J. Holyoak
+                  </li>
+                  <li>
+                    Journal Reviewer: Artificial Intelligence, Behavior Research
+                    Methods, International Journal of Corpus Linguistics,
+                    Language Resources and Evaluation, Natural Language Engineering, PLOS ONE,
+                    Transactions on Knowledge Discovery from Data (TKDD)
+
+                  </li>
+                  </ul>
+                </div>
+              </section>
+
+
+              <section>
+                <p class="title" data-section-title><a href="#panel2">Research</a></p>
+                <div class="content" data-section-content>                  
+                  <p>
+                    Broadly, I conduct research in the areas of natural language
+                    processing, computational social science, and data science
+                    to discover, explain and predict human behavior in large
+                    social systems.  My current research focuses on four central
+                    themes spanning these fields:
+                    
+                    <ul style="font-size:16px; font-weight:300; line-height: 24px; margin-left: 20px ">
+                      <li><b>Who are the people communicating?</b> Humans create nearly all of the
+                        text we see, yet often who is communicating is overlooked.  I design new
+                        methods for identifying the demographics of communicators in order to understand large
+                        social systems.
+                      </li>
+                      <li><b>How are people related?</b>  There are certain
+                      things you would tell your friends but not your mother.
+                      Yet, when we study peoples' communication pattern, we
+                      often focus on the message rather than the relationship
+                      between them.  I work on learning to recognize how people
+                      are related to one another and what effect this has on
+                      their communication and behavior.
+                      </li>
+                      <li><b>How does our online behavior affect our offline
+                      behavior?</b>  As our lives are increasingly lived online,
+                      what effect does this have in our offline behavior?  I
+                      study how the experiences we have online --both good and
+                      bad-- affect the actions we take, such as exercising,
+                      eating, and traveling.
+                      </li>
+                      <li><b>How can we make online behavior more civil?</b>
+                      Anyone who has scrolled through a few YouTube comments or
+                      read a newspaper article's comment section knows how
+                      quickly conversation can devolve into incivility.  I
+                      research what effect this has on people and how we can not
+                      only detect such behavior but also mitigate it by
+                      improving empathy.
+                      </li>
+                    </ul>
+                  </p>
+                  
+                  <p> My long-term research goal combines human and language technologies to create
+                    <i>social understanding</i> that reflects both the content
+                    and people involved in communication.  In all my research, I
+                    strive to improve social equality by representing all people
+                    participating in these social systems.
+                  </p>
+                    
+                </div>
+              </section>
+
+              <section>
+                <p class="title" data-section-title><a href="#panel2">Prospective Students</a></p>
+                <div class="content" data-section-content>                  
+                  
+
+                  <h4>PhD students</h4>
+
+                  <p>I admit roughly one PhD student per year. Sometimes students are co-admitted or co-advised, so the number of admits can vary.</p>
+
+                  <p>For <i>prospective</i> PhDs, I especially like students who come with a
+                  strong computational background with some experience in social science. There are no set
+                  criteria, but you're much better off towards admissions if
+                  you've contacted me (or your advisor has) and let me know of
+                  your interests and goals. Make sure to look over these pages
+                  carefully; the match should be pretty strong. A PhD student is
+                  very costly - in time and money - and I select students for my
+                  research group carefully.</p>
+
+                  <p>If you're a <i>current</I> PhD student <i>outside of
+                  SI</i>, I'm open to collaborations.  One of the best things
+                  about SI is the interdisciplinary environment here and I'm
+                  potentially open to hosting students outside SI (but inside
+                  UM) in lab or co-advising on projects where it makes sense.
+                  Regardless, I'd love to hear from you and you're always
+                  welcome to come take my classes</p>
+                  
+                  <h4>Masters</h4>
+
+                  <p>For <i>current</i> masters students, I typically ask that
+                  you take one of my classes and do well in it before starting
+                  on research.  Often the research you do in one of my graduate
+                  courses can continue on through my lab, if you're interested.
+                  If you've already taken classes before that are similar, send
+                  me an email and we can discuss possibilities.  I will
+                  typically ask new masters students to volunteer in the lab for
+                  a time to show commitment before offering any graduate
+                  assistantship.  This is in part because master's students are
+                  often more caught up in coursework (which is a key part of
+                  graduating), but research requires dedication and continued
+                  effort; demonstrating these early and often generally means
+                  funding sooner.</p>
+
+                  <p>For <i>prospective</i>masters students, I do not have any
+                  role in MSI admissions but please feel free to drop me an
+                  email once you've been accepted.  Showing interest in research
+                  prior to starting is usually good sign and gives you more
+                  opportunities during your masters program to see if research
+                  is something you might want to consider.</p>
+
+                  <h4>Undergraduates</h4>
+                  
+                  <p>I enjoy working with undergraduates and generally have a
+                  few students working on various projects in my lab.  I do look
+                  for some serious work and effort associated with your research
+                  project , but in turn, if you want a recommendation letter
+                  later, it will reflect that effort.  Typically, the biggest
+                  issue I face is students who over-estimate their time
+                  availability and disappear as coursework starts to pile up.
+                  Good research takes time and consistent effort; bugs will
+                  happen, experiments will fail, and programs will take time to
+                  run, so being able to dedicate a few hours every day (<b>no
+                  joke!</b>) to research is critical.  If you can't see yourself
+                  doing that, it's best to reach out during a semester you think
+                  you will have more time. </p>
+
+
+                  <p> I have the easiest time working with technically-oriented
+                    students, who already have good programming skills.  You
+                    will typically be paired with a PhD student who can serve as
+                    an extra mentor and answer your questions.  For some
+                    exceptionally strong students, we can try to get you a
+                    project all to yourself, but this usually requires you
+                    having done research prior.  Occasionally, for bigger
+                    projects, I might pair you with another undergrad so you get
+                    to be your own research team.</p>
+
+                  <p> As a undergrad, you will be expected to join our group's
+                  research meetings.  I typically also try to meet undergrads
+                  twice per week for short meetings so I can provide more rapid
+                  feedback and keep the ball rolling; it's a lot easier to
+                    course correct every few days than once per week.</p>
+
+                  <p>I have yet to hit the upper bound on the number of
+                  undergrads in my lab, so if you're interested, please drop me
+                  a line.  I especially encourage sophomore and junior students
+                  to get involved (earlier is better), so that there's enough
+                  time to do the research and you get the benefit of being in a
+                  lab for longer periods.</p>
+
+                  <h4>Non-PhD External Students not at the University of Michigan</h4>
+
+                  <p>I unfortunately rarely work with undergraduate and masters
+                  students who are not physically at the University of Michigan.
+                  I still get emails from external students asking if we could
+                  together on something remotely and I really would love to, but
+                  my priority is to advise the current students at UM given the
+                  limited bandwith I have for advising.  Your best bet to work
+                  with me is to get admitted to one of our programs and then
+                    drop me an email.</p>
+
+                  <p><i>However</i>, I do on occasion have <u>self-funded</u>
+                  visiting students for the summer and (rarely) during the
+                  academic year.  In these cases, usually the student has some
+                  prior research experience, similar research interests, and
+                  (due to luck) there is a current project going on in my lab
+                  where they would be a good fit.  If you are a self-funded
+                  student who wants to come for the summer, you should send an
+                    email in February or March before the summer that
+                    <ol>
+                      <li> Describes your research experience and state what
+                      parts are relevant to the work going on in my group.
+                      <li> Clearly state why you want to work with me.  This
+                      lets me know that you are familiar with my work and know
+                        what you might be working on!
+                      <li> What you want to get out of a summer research
+                        experience and what you want to learn.  This helps me make
+                        sure that the trip is a success for you as well.
+                    </ol>
+                    I don't consider self-funded visiting students as "free
+                    labor" and strongly want to make sure that your stay is
+                    productive and a success for your career goals.
+                  </p>
+
+                  <P>If you're a <i>PhD student</i> somewhere else and want to
+                  work with me (while being external), this <i>could</i> happen
+                  under the right circumstances.  Typically, your advisor at
+                  your primary institution and I would co-advise you.  I
+                  typically only do these kinds of arrangements when I know your
+                  advisor (more common) or when the collaborative project make
+                  sense (rare).  To get this started, have your advisor email me
+                  (not you directly) about what the project is.</p>
+                  
+                  <h4>Postdocs</h4>
+
+                  <p>I would love to have you all in my lab but this is
+                  generally dependent on funding (but seriously, I would take
+                  you all if I could).  Email me if you think you're a good
+                  match and tell me why and we might be able to figure something
+                  out.  That said, at the moment, I'm not currently actively
+                  seeking postdocs (due to funding, of course).  If you're
+                  coming with your own funding, that changes everything, so drop
+                  me a line then.</p>
+                  
+                </div>
+              </section>
 
 
 
+              <section>
+                <p class="title" data-section-title><a href="#panel2">FAQs</a></p>
+                <div class="content" data-section-content>                  
 
-          </div>       
-        </div>
+
+                  <p><b>Q: How do I pronounce your last name? </b><br/>
+                    A: Like you would in the old country</p>
+                
+                  <p><b>Q: Which old country is that? </b><br/>
+                    A: <span style="font-size: 20pt"> 🤷</span></p>
+
+                  <p><b>Q: Can I research with you or be a member of the Blablablab? </b><br/>
+                    A: For an overly-detailed answer, click the "Prospective students" tab thingie above.  That should cover everything.</p>
+                  
+
+
+                </div>
+              </section>
+              
+</div>
+</div>
+              <!--
+
+              
+              <section>
+                <p class="title" data-section-title><a href="#panel5">Misc</a></p>
+                <div class="content" data-section-content>
+                  <p>
+                    
+                  </p>
+                </div>
+              </section>
+              -->
+
+             
+
+              
+<!-- </div> -->              
+      </div>
       <div class="large-3 columns">
         <div class="panel">
+          
           <hr/>
-          <a href="https://www.cs.mcgill.ca/"><img style="height: 100px; display: block; margin-left: auto; margin-right: auto" alt="Stanford University" src="images/mcgill.png"></a>
-          <a href="https://mila.quebec/"><img style="height: 100px; display: block; margin-left: auto; margin-right: auto" alt="Stanford NLP" src="images/mila_small.png"></a>
-          <br/>
+          <!--
+          <a href="http://si.umich.edu/"><img style="height: 140px; display: block; margin-left: auto; margin-right: auto" alt="UMSI" src="images/umsi-logo.jpeg"></a>
+
+          <br/>-->
+          
+          <p style="font-size: 14px">
+            Associate Professor, <br/> Jointly in the <a href="https://www.si.umich.edu/">School of Information</a>
+            and the  <a href="http://cse.umich.edu/cse/">Department of Computer Science  &amp; Engineering</a>, <br/>           
+            <a href="http://umich.edu/">University of Michigan</a><br/>
+          </p>
+          
           <p>
-            Assistant Professor<br/>
-            McGill University, Mila <br/>
-						Office: McConnell 309
+            <a href="mailto:jurgens@umich.edu">jurgens@umich.edu</a><br/>
           </p>
-          <p style="font-size:14px">
-          wlh@cs.mcgill.ca
+          
+          <p>
+            Office 3385, North Quad<br/>
+            Ann Arbor, MI 48109<br/>
           </p>
+
+          <hr/>
+          <p>PI for the <a href="http://blablablab.si.umich.edu/">Blablablab</a></p>
+          <a href="http://blablablab.si.umich.edu/"><img style="height: 140px; display: block; margin-left: auto; margin-right: auto" alt="UMSI" src="images/blablablab-logo.png"></a>
+          <br/>
+          <p><a href="http://css.si.umich.edu">Computational Social Science at UMSI</a></p>
+          
           <hr/>          
           <p>
-          <!--            <a href="files/WilliamHamilton-CV-short.pdf">CV (short version)</a><br/>-->
-					<!---  <a href="files/WilliamHamilton-CV-long.pdf">CV</a><br/> -->
-            <a href="https://scholar.google.com/citations?user=T5tm9eQAAAAJ&hl=en">Google Scholar</a><br/>
+            <a href="docs/Jurgens,David_CV.pdf">Curriculum Vitae</a><br/>
+            <a href="http://scholar.google.com/citations?user=sGFFr5kAAAAJ">Google Scholar</a><br/>
+            <a href="https://twitter.com/david__jurgens">Twitter</a><br/>
+            <a href="https://medium.com/@jurgens_24580">Medium</a><br/>
           </p>
+
           <hr/>
+
+          
+          
+          <div id="software">
+            <h5>Software</h5> 
+            <p>
+              <a href="https://github.com/euagendas/m3inference">M3</a><br/>
+              <a href="https://github.com/zijwang/genderperformr">Gender-Performr</a><br/>
+              <a href="https://github.com/davidjurgens/equilid">Equilid</a><br/>
+              <a href="https://github.com/davidjurgens/crown">CROWN</a><br/>
+              <a href="http://jurgens.people.si.umich.edu/citation-function/">Citation Function</a><br/>
+              <a href="https://github.com/networkdynamics/humanizr">Humanizr</a><br/>              
+              <a href="https://github.com/networkdynamics/geoinference">Geoinference</a><br/>
+              <a href="https://github.com/fozziethebeat/S-Space/">S-Space Package</a><br/>
+              <a href="https://github.com/pilehvar/ADW">ADW</a><br/>
+            </p>
+          </div>       
+          
         </div>
-      </div> 
+      </div>
     </div>
-    <div class="row">
-      <p style="font-size:10px"> Many thanks to <a href="http://cs.stanford.edu/~jurgens">David Jurgens</a> for the site template/inspiration</p>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+      
+    <script>
+      document.write('<script src=' +
+                              ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+                              '.js><\/script>')
+      </script>
+      
+      <script src="js/foundation.min.js"></script>
+      <!--
+          
+          <script src="js/foundation/foundation.js"></script>
+          
+          <script src="js/foundation/foundation.alerts.js"></script>
+          
+          <script src="js/foundation/foundation.clearing.js"></script>
+          
+          <script src="js/foundation/foundation.cookie.js"></script>
+          
+          <script src="js/foundation/foundation.dropdown.js"></script>
+          
+          <script src="js/foundation/foundation.forms.js"></script>
+          
+          <script src="js/foundation/foundation.joyride.js"></script>
+          
+          <script src="js/foundation/foundation.magellan.js"></script>
+          
+          <script src="js/foundation/foundation.orbit.js"></script>
+          
+          <script src="js/foundation/foundation.reveal.js"></script>
+          
+          <script src="js/foundation/foundation.section.js"></script>
+          
+          <script src="js/foundation/foundation.tooltips.js"></script>
+          
+          <script src="js/foundation/foundation.topbar.js"></script>
+          
+          <script src="js/foundation/foundation.interchange.js"></script>
+          
+          <script src="js/foundation/foundation.placeholder.js"></script>
+          
+          <script src="js/foundation/foundation.abide.js"></script>
+          
+          -->
+      
+      <script>
+        $(document).foundation();
+      </script>
   </body>
 </html>
